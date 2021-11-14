@@ -9,10 +9,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TestController {
 
 	
-	@RequestMapping(value="/test", method=RequestMethod.GET)
+	@RequestMapping(value="/test", method=RequestMethod.POST)
 	@ResponseBody
 	public String ajaxTest() {
+		System.out.println("post 동작!");
+		
 		
 		return "ajax 통신 성공!";
+	}
+
+	@RequestMapping(value="/test", method=RequestMethod.GET)
+	public void goTest() {
 	}
 }
