@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ajax test to vanila js</title>
+</head>
+<script>
+	function ajax() {
+		var xhr = new XMLHttpRequest();
+
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					let target = document.getElementBy("target");
+					target.innerHTML = response;
+					console.log("작업내용 작성");
+				}
+			}
+		};
+
+		xhr.open("post", "/test", true);
+		xhr.setRequestHeader("Content-Type",
+				"application/x-www-form-urlencoded");
+		xhr.send(null);
+	}
+	
+	document.getElementById("ajaxTest").addEventListener('click', ajax());
+</script>
+<body>
+	<h3>hi</h3>
+	<p id="target">원래의 문 문장 </p>
+	<button id="ajaxTest" value="버튼"></button>
+</body>
+</html>
