@@ -11,4 +11,23 @@
 		<item key="internalFilter" value="true"/>
 		<item key="uncategorizedFilter" value="true"/>
 	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="126"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="762"/>
+		<item key="DIALOG_HEIGHT" value="639"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="FileExtensionDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="32"/>
+		<item key="DIALOG_Y_ORIGIN" value="281"/>
+		<item key="DIALOG_WIDTH" value="586"/>
+		<item key="DIALOG_HEIGHT" value="244"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.jdt.ui.CompilationUnitEditor"/>
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".js"/>
+	</section>
 </section>
