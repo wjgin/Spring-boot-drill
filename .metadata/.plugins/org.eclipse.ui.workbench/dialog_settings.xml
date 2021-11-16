@@ -19,15 +19,16 @@
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="FileExtensionDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="32"/>
-		<item key="DIALOG_Y_ORIGIN" value="281"/>
+		<item key="DIALOG_X_ORIGIN" value="26"/>
+		<item key="DIALOG_Y_ORIGIN" value="144"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="244"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="EditorSelectionDialog">
 		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.jdt.ui.CompilationUnitEditor"/>
-		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".js"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.wst.jsdt.chromium.debug.ui.editors.JsEditor"/>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>

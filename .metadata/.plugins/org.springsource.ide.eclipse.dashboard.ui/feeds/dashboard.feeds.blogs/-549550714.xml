@@ -22,14 +22,14 @@
   &lt;li&gt;Support jMolecules&amp;rsquo; @Identity Annotation for Identifiers&lt;/li&gt;
   &lt;li&gt;Fluent Query API for Querydsl and Query-by-Example&lt;/li&gt;
   &lt;li&gt;Deprecated RxJava 2 Support&lt;/li&gt;
-  &lt;li&gt;MongoDB @DocumentReference, schema derivation for encrypted fields, MongoDB 5.0 Time Series support&lt;/li&gt;
+  &lt;li&gt;MongoDB @DocumentReference, schema derivation for encrypted fields, and MongoDB 5.0 Time Series support&lt;/li&gt;
   &lt;li&gt;Redis 6.2 support&lt;/li&gt;
-  &lt;li&gt;Support for streaming large result sets in Spring Data JDBC, Projections, and SQL Builder refinements around conditions, JOINs and SELECT projections&lt;/li&gt;
+  &lt;li&gt;Support for streaming large result sets in Spring Data JDBC, Projections, and SQL Builder refinements around conditions, JOINs, and SELECT projections&lt;/li&gt;
   &lt;li&gt;Support for Impersonation and support for Querydsl in Neo4j&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Please find a more detailed description in the &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-2021.1-%28Q%29-Release-Notes"&gt;Release Notes&lt;/a&gt;.&lt;br/&gt;This is the first time we offer release notes in this format, so please let us know if it works for you and what we can improve.&lt;/p&gt;
-&lt;p&gt;With 2021.1.0 out of the door we&amp;rsquo;ll concentrate our work on Spring Data 3.0.0 development with a Java 17 and Jakarta EE 9 baseline. Spring Data 3.0 development will be an ongoing endeavour throughout the next year. We plan to adhere to our 6-month release cadence, so you should expect a lighter Spring Data 2.7 (2022.0) feature release shipping mostly bug fixes and dependency upgrades in May of 2022.&lt;/p&gt;
-&lt;p&gt;The release is built on top of Spring Framework &lt;code&gt;5.3.13&lt;/code&gt;. For your convenience, you can consume Spring Data &lt;code&gt;2021.1.0&lt;/code&gt; through the upcoming Spring Boot releases &lt;code&gt;2.6.0&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;You can find a more detailed description in the &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-2021.1-%28Q%29-Release-Notes"&gt;Release Notes&lt;/a&gt;.&lt;br/&gt;This is the first time we offer release notes in this format, so please let us know if it works for you and what we can improve.&lt;/p&gt;
+&lt;p&gt;With 2021.1.0 out of the door, we&amp;rsquo;ll concentrate our work on Spring Data 3.0.0 development with a Java 17 and Jakarta EE 9 baseline. Spring Data 3.0 development will be an ongoing endeavor throughout the next year. We plan to adhere to our 6-month release cadence, so you should expect a lighter Spring Data 2.7 (2022.0) feature release (shipping mostly bug fixes and dependency upgrades) in May of 2022.&lt;/p&gt;
+&lt;p&gt;This release is built on top of Spring Framework &lt;code&gt;5.3.13&lt;/code&gt;. For your convenience, you can consume Spring Data &lt;code&gt;2021.1.0&lt;/code&gt; through the upcoming Spring Boot releases &lt;code&gt;2.6.0&lt;/code&gt;. &lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Spring Data Commons 2.6 GA - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.6.0"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.6.0/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.6.0/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-commons/releases/tag/2.6.0"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data JDBC 2.3 GA - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jdbc/2.3.0"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.3.0/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.3.0/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-jdbc/releases/tag/2.3.0"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
@@ -59,8 +59,8 @@
     <id>tag:spring.io,2021-11-12:4602</id>
     <updated>2021-11-12T14:00:00Z</updated>
     <content type="html">&lt;p&gt;On behalf of the team, I’m pleased to announce the availability of the Spring Data &lt;code&gt;2021.0.7&lt;/code&gt; and &lt;code&gt;2020.0.15&lt;/code&gt; service releases.&lt;/p&gt;
-&lt;p&gt;Both releases are built on top of Spring Framework &lt;code&gt;5.3.13&lt;/code&gt;. For your convenience, you can consume Spring Data &lt;code&gt;2021.0.7&lt;/code&gt; and &lt;code&gt;2020.0.15&lt;/code&gt; through the upcoming Spring Boot releases &lt;code&gt;2.5.7&lt;/code&gt; and &lt;code&gt;2.4.13&lt;/code&gt;, respectively. &lt;/p&gt;
-&lt;p&gt;&lt;code&gt;2020.0.x&lt;/code&gt; reached its end of life and will no longer be part of regular OSS releases. If you are still on this version please consider upgrading at your earliest convenience.&lt;/p&gt;
+&lt;p&gt;Both releases are built on top of Spring Framework &lt;code&gt;5.3.13&lt;/code&gt;. For your convenience, you can consume Spring Data &lt;code&gt;2021.0.7&lt;/code&gt; and &lt;code&gt;2020.0.15&lt;/code&gt; through the upcoming Spring Boot releases, &lt;code&gt;2.5.7&lt;/code&gt; and &lt;code&gt;2.4.13&lt;/code&gt;, respectively. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;2020.0.x&lt;/code&gt; reached its end of life and will no longer be part of regular OSS releases. If you are still on this version, please consider upgrading at your earliest convenience.&lt;/p&gt;
 &lt;p&gt;Both service releases ship with mostly bug fixes and dependency upgrades.&lt;/p&gt;
 &lt;p&gt;To round things off, here are the links to the artifacts, change logs, and documentation:&lt;/p&gt;&lt;h2&gt;&lt;a href="#2021-0-7" class="anchor" name="2021-0-7"&gt;&lt;/a&gt;2021.0.7&lt;/h2&gt;
 &lt;ul&gt;

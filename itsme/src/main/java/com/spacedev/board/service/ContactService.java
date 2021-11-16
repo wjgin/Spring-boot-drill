@@ -1,5 +1,9 @@
 package com.spacedev.board.service;
 
-public class ContactService {
 
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class ContactService {
 }
