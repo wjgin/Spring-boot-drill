@@ -1,5 +1,7 @@
 package com.spacedev.board;
 
+import java.time.LocalDateTime;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +20,8 @@ class ItsmeApplicationTests {
 	
 	@Test
 	void contextLoads() {
+		System.out.println("========= 현재시간 출력 =========");
+		System.out.println(LocalDateTime.now());
 	}
 
 }

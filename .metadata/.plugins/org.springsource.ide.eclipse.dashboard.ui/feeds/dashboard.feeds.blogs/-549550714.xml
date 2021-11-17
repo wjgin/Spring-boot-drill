@@ -5,7 +5,54 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-11-12T14:00:00Z</updated>
+  <updated>2021-11-17T08:00:00Z</updated>
+  <entry>
+    <title>Spring Tips: @Controllers: WebSockets</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/17/spring-tips-controllers-websockets" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-11-17:4606</id>
+    <updated>2021-11-17T08:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment of Spring Tips, we&amp;rsquo;re going to resume our series on Spring&amp;rsquo;s @Controller annotation, this time diving into Spring&amp;rsquo;s WebSocket support.&lt;/p&gt;
+&lt;p&gt;The code &lt;a href="github.com/spring-tips/controllers"&gt;is here&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/m0K3ElazGE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - November 16th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/16/this-week-in-spring-november-16th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-11-16:4605</id>
+    <updated>2021-11-16T17:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Can you believe it&amp;rsquo;s nearly December 2021? I&amp;rsquo;m still getting used to the idea that we&amp;rsquo;re already in 2021 and now the year&amp;rsquo;s nearly behind us! Stop the world, I want off! Time&amp;rsquo;s flying. &lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been up to my eyeballs in &lt;em&gt;Spring Tips&lt;/em&gt; video production. I can&amp;rsquo;t wait for you &lt;a href="https://twitter.com/SpringTipsLive"&gt;to see tomorrow&amp;rsquo;s installment (@SpringTipsLive)&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve also got some great podcast interviews lined up. As always, new episodes drop on Apple Podcasts, Spotify, etc., every Thursday night (California time)/Friday (for most of the world). &lt;a href="https://twitter.com/BootifulPodcast"&gt;Don&amp;rsquo;t miss it (@BootifulPodcast)&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;You could also just check out &lt;a href="https://joshlong.com"&gt;my blog (joshlong.com)&lt;/a&gt; for the upcoming appearances, podcasts, Spring Tips videos, etc. The trouble is that the blog is otherwise pretty &lt;em&gt;boring&lt;/em&gt;. My boring content notwithstanding, it&amp;rsquo;s a plain l&amp;rsquo;il page on the internet, and I&amp;rsquo;ve been wanting to mix it up for a long time. So I am. It&amp;rsquo;s currently a generated, static site powered by a Github Action and Github Pages (thank you, Github!) &lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s no longer enough, I think. So, I&amp;rsquo;m updating it. It&amp;rsquo;ll be a well-designed Vue.js SPA that talks to an API henceforth. This means somebody needs to design it; turn the design into valid, mobile-and-desktop friendly markup; turn that markup into a Vue.js application; and then connect that Vue.js application to the backend API, which somebody also needs to build. So I&amp;rsquo;ve been working on all of that. I enjoy the process of building something with my hands. I enjoy the end-to-end work. I love this kind of stuff. There&amp;rsquo;s nothing cooler than being able to slap together services or a system and then share it with the world. This time around, however, I&amp;rsquo;ve really enjoyed one particular aspect of it: CSS. Yes, &lt;em&gt;that&lt;/em&gt; CSS. Cascading Style Sheets. &lt;/p&gt;
+&lt;p&gt;For me, CSS has been this satisfying, albeit brainless, indulgence. Look at the design, convert it. Look at the design, convert. And on and on. It&amp;rsquo;s painstaking. I&amp;rsquo;ve spent more than a week of my free time getting &lt;em&gt;just&lt;/em&gt; the front page working in CSS. The new front page is an incredibly dynamic design, with lots of zones. It was no small feat to get this all working in the new world, but I&amp;rsquo;ve done it, and I love it. I wonder if this is what it feels like to do crossword puzzles, play Tetris, knit, or crochet for others? It&amp;rsquo;s mindless. I get into this wonderful zone where I&amp;rsquo;ll focus on one section of the design and then come up for air a few hours later with like &lt;em&gt;one&lt;/em&gt; little zone, or panel, of the page working as it should. But it&amp;rsquo;s infinitely satisfying! And when you get it to also do the right thing when the page resizes, e.g., for mobile users? Priceless! &lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m just glad my kid&amp;rsquo;s learning CSS and was able to help me a little. She&amp;rsquo;s awfully skilled.&lt;/p&gt;
+&lt;p&gt;Anyway, thanks for indulging my little story. Now, let&amp;rsquo;s get back to the main story: the wide, wonderful and wacky world of Springdom. We&amp;rsquo;ve got a ton for this week!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In last week&amp;rsquo;s installment of &lt;a href="https://spring.io/blog/2021/11/11/a-bootiful-podcast-jms-and-messaging-legend-hornetq-and-artemis-cofounder-clebert-suconic"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to JMS and Messaging legend, HornetQ and Artemis co-founder, Clebert Suconic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Not strictly speaking related to Spring, but the far-and-wide removal of Docker from production and local developer desktops is a trend I see gaining strength and it can&amp;rsquo;t hurt to be well prepared for it. This blog - &lt;a href="https://kubernetes.io/blog/2021/11/12/are-you-ready-for-dockershim-removal/"&gt;&lt;em&gt;Dockershim removal is coming. Are you ready?&lt;/em&gt;&lt;/a&gt; - may help.&lt;/li&gt;
+  &lt;li&gt;I liked this post on Piotr&amp;rsquo;s TechBlog post: &lt;a href="https://piotrminkowski.com/2021/11/11/kafka-streams-with-spring-cloud-stream/"&gt;Kafka Streams with Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://m.youtube.com/watch?v=Zkcy0tlYJpI&amp;feature=youtu.be"&gt;R2DBC and Spring for Non-Blocking Database Access&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/micrometer-metrics/micrometer/releases/tag/v1.8.0"&gt;Release 1.8.0 · micrometer-metrics/micrometer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://m.youtube.com/watch?v=YEci46QRJ7E&amp;feature=youtu.be"&gt;Spring Cloud Stream with Apache Kafka and Rabbitmq binder | Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/12/spring-data-2021-0-7-and-2020-0-15-released"&gt;Spring Data 2021.0.7 and 2020.0.15 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/12/spring-data-2021-1-0-goes-ga"&gt;Spring Data 2021.1.0 goes GA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/11/spring-framework-5-3-13-available-now"&gt;Spring Framework 5.3.13 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/10/spring-tips-my-reactive-summit-2021-day-2-keynote-with-james-ward"&gt;Spring Tips: My Reactive Summit 2021 Day 2 Keynote with James Ward&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/hantsy/status/1459798398689808385?s=12"&gt;hantsy has been adding samples demonstrating reactive concepts to this repository since Spring Framework 5 development began. There are always new and interesting examples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1459172912552890373"&gt;Join us, and some of our favorite software developers for the next installment of SpringOne Tour!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data 2021.1.0 goes GA</title>
     <link rel="alternate" href="https://spring.io/blog/2021/11/12/spring-data-2021-1-0-goes-ga" />
@@ -650,45 +697,6 @@ public class BookControllerTests {&#xD;
   &lt;li&gt;VSCode Java is 1.0! Hurray! &lt;a href="https://github.com/redhat-developer/vscode-java/blob/master/CHANGELOG.md#100-october-19th-2021"&gt;vscode-java/CHANGELOG.md at master · redhat-developer/vscode-java&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/kuberhealthy/kuberhealthy"&gt;kuberhealthy/kuberhealthy: A Kubernetes operator for running synthetic checks as pods. Works great with Prometheus!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Security Reports for Spring Framework, Spring Data REST, Spring AMQP, and Spring Cloud OpenFeign</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/26/security-reports-for-spring-framework-spring-data-rest-spring-amqp-and-spring-cloud-openfeign" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Rossen Stoyanchev</name>
-    </author>
-    <id>tag:spring.io,2021-10-26:4584</id>
-    <updated>2021-10-26T17:00:00Z</updated>
-    <content type="html">&lt;p&gt;The recently released Spring Boot &lt;a href="https://spring.io/blog/2021/10/21/spring-boot-2-5-6-is-now-available"&gt;2.5.6&lt;/a&gt; and &lt;a href="https://spring.io/blog/2021/10/21/spring-boot-2-4-12-is-now-available"&gt;2.4.12&lt;/a&gt; releases contain fixes for the following security vulnerabilities:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2021-22096"&gt;CVE-2021-22096&lt;/a&gt; for the Spring Framework&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2021-22047"&gt;CVE-2021-22047&lt;/a&gt; for Spring Data REST&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2021-22097"&gt;CVE-2021-22097&lt;/a&gt; for Spring AMQP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In addition, Spring Cloud OpenFeign has &lt;a href="https://spring.io/blog/2021/10/26/spring-cloud-openfeign-versions-2-2-10-release-3-0-5-and-3-1-0-m4-are-now-available"&gt;released&lt;/a&gt; versions 3.0.5 and 2.2.10, based on the same Spring Boot versions, and containing a fix for the following security vulnerability:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2021-22044"&gt;CVE-2021-22044&lt;/a&gt; for Spring Cloud OpenFeign&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please, review the reports and upgrade!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud OpenFeign versions 2.2.10.RELEASE, 3.0.5 and 3.1.0-M4 are now available</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/26/spring-cloud-openfeign-versions-2-2-10-release-3-0-5-and-3-1-0-m4-are-now-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Olga Maciaszek-Sharma</name>
-    </author>
-    <id>tag:spring.io,2021-10-26:4583</id>
-    <updated>2021-10-26T17:00:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that Spring Cloud OpenFeign versions 2.2.10.RELEASE, 3.0.5 and 3.1.0-M4 have been released.&lt;/p&gt;
-&lt;p&gt;These are primarily security releases with fixes for the &lt;a href="https://tanzu.vmware.com/security/cve-2021-22044"&gt;CVE-2021-22044&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;Applications using type-level &lt;code&gt;@RequestMapping&lt;/code&gt;annotations over Feign client interfaces, can be involuntarily exposing endpoints corresponding to &lt;code&gt;@RequestMapping&lt;/code&gt;-annotated interface methods. Although a response is not returned for a request sent in this way, it does reach the corresponding server-side endpoint.&lt;/p&gt;
-&lt;p&gt;The practice of using a type-level &lt;code&gt;@RequestMapping&lt;/code&gt; on a Feign client interface has been discouraged in the documentation, but we&amp;rsquo;re now taking the step to reject it completely.&lt;/p&gt;
-&lt;p&gt;These versions will be picked up later by the 2020.0.x and 2021.0.x release trains, however, we recommend you already upgrade Spring Cloud OpenFeign in your projects to these most recent versions.&lt;/p&gt;
-&lt;p&gt;See all issues included in 2.2.10.RELEASE &lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/milestone/44?closed=1"&gt;here&lt;/a&gt;&lt;br/&gt;See all issues included in 3.1.0-M4 &lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/milestone/45?closed=1"&gt;here&lt;/a&gt;&lt;br/&gt;No additional issues were included for 3.0.5.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -1,6 +1,8 @@
 package com.spacedev.board.entity;
 
-import java.sql.Date;
+// import java.sql.Date;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,5 +35,6 @@ public class Contact {
 	
 	private String message;
 	
-	private Date wdate;
+	// private Date wdate;	// 시간은 못받음 => 날짜만 받을 때 사
+	private LocalDateTime wdate;
 }
