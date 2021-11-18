@@ -1,0 +1,88 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<body>
+	<!-- 	<th:block th:replace="~{/layout/basic :: setContent(~{this :: content})}"> -->
+	<th:block th:fragment="content">
+
+		<div class="container">
+			<div class="col-6">
+				<label><b>채팅방</b></label>
+				<p>
+					<span id="sessionId" th:text="${session.sessionId}"></span><span>님
+					</span>
+				</p>
+			</div>
+			<div>
+				<div id="msgArea" class="col"></div>
+				<div class="col-6">
+					<div class="input-group mb-3">
+						<input type="text" id="msg" class="form-control"
+							aria-label="Recipient's username"
+							aria-describedby="button-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button" id="button-send">전송</button>
+							<button class="btn btn-outline-secondary" type="button" id="disconn">나가</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</th:block>
+	<!-- 	</th:block> -->
+
+
+	<script type="text/javascript" th:inline="javascript">
+
+         document.querySelector("#disconn").addEventListener("click", (e) => {
+        	 location.href = "/";
+            onClose(e);
+         })
+         
+         document.querySelector("#button-send").addEventListener("click", (e) => {
+             send();
+         });
+
+         const websocket = new WebSocket("ws://localhost:8080/ws/chat");
+
+         websocket.onmessage = onMessage;
+         websocket.onopen = onOpen;
+         websocket.onclose = onClose;
+
+         // send a message
+         function send(){
+             let msg = document.getElementById("msg").value;
+             websocket.send(msg);
+         }
+         
+         //채팅창에서 나갔을 때
+         function onClose(evt) {
+        	 console.log("close event : " + evt);
+         }
+         
+         //채팅창에 들어왔을 때
+         function onOpen(evt) {
+        	 console.log("open event : " + evt);
+         }
+
+         function onMessage(msg) {
+        	 console.log("onMessage : " + msg);
+             var data = msg.data;
+             var sessionId = null;
+             var message = null;
+             var arr = data.split(":");
+
+             sessionId = arr[0];
+             message = arr[1];
+
+            var node = document.createElement('div');
+            var str = "<div class='col-6'>";
+            str += "<div class='alert alert-secondary'>";
+            str += "<b>" + sessionId + " : " + message + "</b>";
+            str += "</div></div>";
+            node.innerHTML = str;
+            document.querySelector("#msgArea").appendChild(node);
+         }
+	</script>
+</body>
+</html>

@@ -5,7 +5,67 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-11-17T08:00:00Z</updated>
+  <updated>2021-11-18T11:53:54Z</updated>
+  <entry>
+    <title>Spring Boot 2.5.7 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/18/spring-boot-2-5-7-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2021-11-18:4613</id>
+    <updated>2021-11-18T11:53:54Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.5.7&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.5.7"&gt;35 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.5.7/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 2.4.13 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/18/spring-boot-2-4-13-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2021-11-18:4611</id>
+    <updated>2021-11-18T09:12:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.4.13&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.4.13"&gt;26 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#end-of-oss-support" class="anchor" name="end-of-oss-support"&gt;&lt;/a&gt;End of OSS Support&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;2.4.x&lt;/code&gt; has now reached the end of its OSS support period and regular releases will no longer be made. If you are still on this version, please consider upgrading at your earliest convenience. If you cannot upgrade at this time, &lt;a href="https://tanzu.vmware.com/spring-runtime"&gt;commercial support is available&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.4.13/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Batch 4.3.4 and 4.2.8 available now!</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/17/spring-batch-4-3-4-and-4-2-8-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mahmoud Ben Hassine</name>
+    </author>
+    <id>tag:spring.io,2021-11-18:4612</id>
+    <updated>2021-11-17T19:36:00Z</updated>
+    <content type="html">&lt;p&gt;I am pleased to announce that Spring Batch 4.2.8 and 4.3.4 have been released and are available now from Maven Central repository. These patch releases come with a number of bug fixes and dependency updates. You can find the complete change logs here: &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/4.2.8.RELEASE"&gt;4.2.8&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/4.3.4"&gt;4.3.4&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I would like to thank all contributors who had a role in these releases!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/docs/current/reference/html/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Netflix version 2.2.10.RELEASE is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/17/spring-cloud-netflix-version-2-2-10-release-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Olga Maciaszek-Sharma</name>
+    </author>
+    <id>tag:spring.io,2021-11-17:4607</id>
+    <updated>2021-11-17T16:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that Spring Cloud Netflix version 2.2.10.RELEASE has been released.&lt;/p&gt;
+&lt;p&gt;This is primarily a security release that fixes the &lt;a href="https://tanzu.vmware.com/security/cve-2021-22053"&gt;CVE-2021-22053&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Applications using both &lt;code&gt;spring-cloud-netflix-hystrix-dashboard&lt;/code&gt; and &lt;code&gt;spring-boot-starter-thymeleaf&lt;/code&gt; exposed a way to execute code submitted within the request URI path during the resolution of view templates. When a request was made at &lt;code&gt;/hystrix/monitor;[user-provided-data]&lt;/code&gt;, the path elements following &lt;code&gt;hystrix/monitor&lt;/code&gt; were being evaluated as SpringEL expressions, which could lead to code execution.&lt;/p&gt;
+&lt;p&gt;This release fixes the issue.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: @Controllers: WebSockets</title>
     <link rel="alternate" href="https://spring.io/blog/2021/11/17/spring-tips-controllers-websockets" />
@@ -534,169 +594,6 @@ dependencyManagement {&#xD;
     <updated>2021-10-28T22:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://github.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Paketo contributor &lt;a href="https://github.com/dmikusa-pivotal"&gt;Daniel Mikusa&lt;/a&gt; about buildpacks, Paketo, containers, UPX, and so much more&lt;/p&gt;
 &lt;iframe title="Daniel Mikusa on Buildpacks, Paketo, UPX, Tilt, GraalVM Native Images, Docker Containers and more" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=6e83x-1118ba6-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring GraphQL 1.0.0-M3 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/28/spring-graphql-1-0-0-m3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2021-10-28:4588</id>
-    <updated>2021-10-28T15:46:00Z</updated>
-    <content type="html">&lt;p&gt;The Spring GraphQL team is pleased to announce a 3rd milestone towards a 1.0.0 release, driven with great help from the community .&lt;/p&gt;&lt;h2&gt;&lt;a href="#batch-mapping" class="anchor" name="batch-mapping"&gt;&lt;/a&gt;Batch Mapping&lt;/h2&gt;
-&lt;p&gt;The &lt;a href="https://spring.io/blog/2021/09/01/spring-graphql-1-0-0-m2-available-now"&gt;2nd milestone&lt;/a&gt; introduced an annotation programming model for GraphQL data controllers with &lt;code&gt;@SchemaMapping&lt;/code&gt; methods. The 3rd milestone adds a new &lt;code&gt;@BatchMapping&lt;/code&gt; method.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re familiar with GraphQL, you know that navigating an object graph can cause the &amp;ldquo;N+1 queries problem&amp;rdquo; if we&amp;rsquo;re not mapping carefully object relations. We could already leverage the &lt;a href="https://www.graphql-java.com/documentation/v16/batching/"&gt;Batching feature&lt;/a&gt; from GraphQL Java to solve that problem, but this release introduces &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/#execution-batching"&gt;dedicated support&lt;/a&gt; as well as an &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/#controllers-batch-mapping"&gt;&lt;code&gt;@BatchMapping&lt;/code&gt; annotation&lt;/a&gt; for a smoother experience:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Controller&#xD;
-public class BookController {&#xD;
-&#xD;
-    @BatchMapping&#xD;
-    public Mono&amp;lt;Map&amp;lt;Book, Author&amp;gt;&amp;gt; author(List&amp;lt;Book&amp;gt; books) {&#xD;
-        // ...&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;With that example, we&amp;rsquo;re using a GraphQL engine mechanism to efficiently load many &lt;code&gt;Book-&amp;gt;Author&lt;/code&gt; relations with a single call.&lt;/p&gt;&lt;h2&gt;&lt;a href="#improved-querydsl-support" class="anchor" name="improved-querydsl-support"&gt;&lt;/a&gt;Improved Querydsl Support&lt;/h2&gt;
-&lt;p&gt;The &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/#data-querydsl"&gt;QuerydslDataFetcher support&lt;/a&gt; now checks the selected fields for a query and fetches only the corresponding properties of the underlying domain entity.&lt;/p&gt;&lt;h2&gt;&lt;a href="#typeresolver-rsquo-s" class="anchor" name="typeresolver-rsquo-s"&gt;&lt;/a&gt;TypeResolver&amp;rsquo;s&lt;/h2&gt;
-&lt;p&gt;There is now &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/#execution-graphqlsource-default-type-resolver"&gt;built-in support&lt;/a&gt; for TypeResolver&amp;rsquo;s for GraphQL Unions and Interfaces. By default, it tries to match the simple name of a Java class to a GraphQL Object type, and it tries the same for super types in the hierarchy of the class. &lt;/p&gt;
-&lt;p&gt;There are further options to customize this behavior to provide sufficient hints to match concrete Java classes to GraphQL Object types. Please, try this and let us know how well it works or if you need further flexibility around this feature.&lt;/p&gt;&lt;h2&gt;&lt;a href="#databinder-for-input-arguments" class="anchor" name="databinder-for-input-arguments"&gt;&lt;/a&gt;DataBinder for Input Arguments&lt;/h2&gt;
-&lt;p&gt;GraphQL Java parses input arguments to generic Maps of data. Spring GraphQL now uses the Spring Framework &lt;code&gt;DataBinder&lt;/code&gt; mechanism to turn those Maps into the typed objects declared on an &lt;code&gt;@Argument&lt;/code&gt; controller method parameter. You can hook in the &lt;code&gt;ConversionService&lt;/code&gt; to use in the &lt;code&gt;DataBinder&lt;/code&gt; to convert individual input fields when needed.&lt;/p&gt;&lt;h2&gt;&lt;a href="#websocketinterceptor" class="anchor" name="websocketinterceptor"&gt;&lt;/a&gt;WebSocketInterceptor&lt;/h2&gt;
-&lt;p&gt;There is now a &lt;code&gt;WebSocketInterceptor&lt;/code&gt; sub-type of &lt;code&gt;WebInterceptor&lt;/code&gt; which can also handle the &lt;code&gt;CONNECTION_INIT&lt;/code&gt; and the &lt;code&gt;COMPLETE&lt;/code&gt; messages on a WebSocket connection, including access to the &lt;code&gt;CONNECTION_INIT&lt;/code&gt; payload along with the ability to reject the connection. Please, give this feature a try and let us know if there is anything further needed.&lt;/p&gt;&lt;h2&gt;&lt;a href="#cors-configuration" class="anchor" name="cors-configuration"&gt;&lt;/a&gt;CORS Configuration&lt;/h2&gt;
-&lt;p&gt;The Spring GraphQL Boot starter provides &lt;code&gt;spring.graphql.cors.*&lt;/code&gt; properties to configure CORS for the exposed GraphQL endpoints.&lt;/p&gt;&lt;h2&gt;&lt;a href="#query-files-for-graphqltester" class="anchor" name="query-files-for-graphqltester"&gt;&lt;/a&gt;Query Files for GraphQlTester&lt;/h2&gt;
-&lt;p&gt;This release builds on the &lt;code&gt;GraphQlTester&lt;/code&gt; API and the testing auto-configuration to help you test your Spring GraphQL application.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;GraphQlTester&lt;/code&gt; now supports use of &lt;code&gt;*.graphql&lt;/code&gt; &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/#testing-queries"&gt;query files&lt;/a&gt; in tests as an alternative to writing queries, inline in the Java test classes. Given a &lt;code&gt;projectReleases.graphql&lt;/code&gt; file in your test resources:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint graphql"&gt;query projectReleases($slug: ID!) {&#xD;
-    project(slug: $slug) {&#xD;
-        releases {&#xD;
-            version&#xD;
-        }&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can now refer to this query file in your test:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;graphQlTester.queryName(&amp;quot;projectReleases&amp;quot;) &#xD;
-        .variable(&amp;quot;slug&amp;quot;, &amp;quot;spring-framework&amp;quot;) &#xD;
-        .execute()&#xD;
-        .path(&amp;quot;project.releases[*].version&amp;quot;)&#xD;
-        .entityList(String.class)&#xD;
-        .hasSizeGreaterThan(1);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &amp;ldquo;JS GraphQL&amp;rdquo; plugin for IntelliJ supports GraphQL query files with code completion.&lt;/p&gt;&lt;h2&gt;&lt;a href="#ldquo-sliced-tests-rdquo-support-with-graphqltest" class="anchor" name="ldquo-sliced-tests-rdquo-support-with-graphqltest"&gt;&lt;/a&gt;&amp;ldquo;Sliced tests&amp;rdquo; support with @GraphQlTest&lt;/h2&gt;
-&lt;p&gt;Last but not least, we&amp;rsquo;re now providing a new &lt;code&gt;@GraphQlTest&lt;/code&gt; testing facility, quite similar to the &lt;code&gt;@WebMvcTest&lt;/code&gt; and &lt;code&gt;@JsonTest&lt;/code&gt; Spring Boot annotations.&lt;br/&gt;With this, you can write integration tests that &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing.spring-boot-applications.autoconfigured-tests"&gt;rely on particular slice of your application&lt;/a&gt;.&lt;br/&gt;No need to load the entire application context, only the relevant parts are considered, which makes it easy to mock and test without involving too much infrastructure.&lt;/p&gt;
-&lt;p&gt;In this example, we&amp;rsquo;re testing our &lt;code&gt;BookController&lt;/code&gt; to make sure that it&amp;rsquo;s properly implemented - no need to set up complex data fixtures as we can mock the repository.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@GraphQlTest(controllers = BookController.class)&#xD;
-public class BookControllerTests {&#xD;
-&#xD;
-    @Autowired&#xD;
-    private GraphQlTester graphQlTester;&#xD;
-&#xD;
-    @MockBean&#xD;
-    private BookRepository bookRepository;&#xD;
-&#xD;
-    @Test&#xD;
-    void bookdByIdShouldReturnSpringBook() {&#xD;
-        given(this.bookRepository.findById(42L)).willReturn(new Book(42L, &amp;quot;Spring GraphQL&amp;quot;));&#xD;
-        String query = &amp;quot;&amp;quot;&amp;quot;&#xD;
-			{&#xD;
-			  bookById(id: &amp;quot;42&amp;quot;){&#xD;
-			    id&#xD;
-			    name&#xD;
-			  }&#xD;
-			}&#xD;
-			&amp;quot;&amp;quot;&amp;quot;;&#xD;
-        this.graphQlTester.query(query).execute()&#xD;
-                .path(&amp;quot;data.bookById.name&amp;quot;).entity(String.class).isEqualTo(&amp;quot;Spring GraphQL&amp;quot;);&#xD;
-    }&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More &lt;a href="https://github.com/spring-projects/spring-graphql/milestone/4?closed=1"&gt;improvements and fixes made their way into their release&lt;/a&gt; and they&amp;rsquo;re available right now in the new Spring GraphQL 1.0.0-M3 from the Spring Milestone repository.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, you can &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/#boot-graphql"&gt;get started with Spring GraphQL&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;raise issues on our GitHub project&lt;/a&gt;.&lt;br/&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M3/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.12.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/27/spring-tools-4-12-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2021-10-27:4587</id>
-    <updated>2021-10-27T19:00:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.12.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#important-updates-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="important-updates-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;important updates to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;embedded runtime upgraded to JDK17 (across all distributions, including Apple Silicon)&lt;/li&gt;
-  &lt;li&gt;Java 17 support available (&lt;a href="https://marketplace.eclipse.org/content/java-17-support-eclipse-2021-09-421"&gt;via separate add-on&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/sts4/wiki/Previous-Versions"&gt;early-access builds for upcoming Eclipse 2021-12 release available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/sts4/wiki/Previous-Versions"&gt;early-access builds for Apple Silicon platform (ARM M1) available&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h4&gt;&lt;a href="#additional-changes" class="anchor" name="additional-changes"&gt;&lt;/a&gt;additional changes&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Alway Download sources and javadoc when I open sts (distribution includes latest m2e 1.18.2 release now) (&lt;a href="https://github.com/spring-projects/sts4/issues/692"&gt;#692&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: docker integration doesn&amp;rsquo;t work on Apple Silicon (&lt;a href="https://github.com/spring-projects/sts4/issues/684"&gt;#684&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Annoying error message on every eclipse startup if CF destination is not reachable (&lt;a href="https://github.com/spring-projects/sts4/issues/688"&gt;#688&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2021-10-27-4121-release-no-language-server-updates"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2021-10-27-4121-release-no-language-server-updates&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Spring Tools 4.13.0 is scheduled to be released in late December 2021.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: @Controllers (pt. 1): the "C" in Model 2 MVC</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/27/spring-tips-controllers-pt-1-the-c-in-model-2-mvc" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-10-27:4586</id>
-    <updated>2021-10-27T07:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, the first of a series, Josh Long looks at the venerable &lt;code&gt;@Controller&lt;/code&gt; annotation and its use supporting Model 2 MVC-style web applications.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hUBrFekxn0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - October 26th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/26/this-week-in-spring-october-26th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-10-26:4585</id>
-    <updated>2021-10-26T18:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How are you? &lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m doing well, as always. I literally just wrapped up presenting a fun session at the Russian Joker conference all about Spring and GraphQL. I got a ton of great questions from an enthusiastic audience. Thanks so much for joining me, everyone. I&amp;rsquo;ve got to get to other meetings, though, so let&amp;rsquo;s get this wonderful week in Spring out of the way! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/20/spring-tips-refreshable-configuration-with-spring-cloud-bus-and-the-spring-cloud-config-monitor"&gt;Spring Tips: refreshable configuration with Spring Cloud Bus, and the Spring Cloud Config Monitor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2021/10/21/a-bootiful-podcast-rabbitmq-and-weaveworks-founder-alexis-richardson-on-rabbitmq-pivotal-spring-kubernetes-and-fluxcd"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to RabbitMQ and Weaveworks founder Alexis Richardson about RabbitMQ, Pivotal, Spring, Kubernetes, and FluxCD&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.java67.com/2021/10/what-is-property-source-in-spring.html"&gt;A great article that @Javinpaul linked me to: What is &lt;code&gt;@PropertySource&lt;/code&gt; in Spring Framework? &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;fellow Java Champion &lt;a href="https://twitter.com/aalmiray/status/1452530369157292034?s=12"&gt;Andres Almiray has just released a very cool sample Spring Boot application &lt;/a&gt; demonstrating some features of the JReleaser project, which aims to make deploying artifacts as easy as possible.&lt;/li&gt;
-  &lt;li&gt;Want to learn Spring Boot? Check out &lt;a href="https://github.com/BNYMellon/spring-kata"&gt;BNYMellon/spring-kata, which are code katas for learning Spring and Spring Boot.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blog.codecentric.de/en/2021/10/gitlab-ci-paketo-buildpacks/"&gt;Cloud Native Buildpacks / Paketo.io in GitLab CI without Docker &amp;amp; pack CLI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Did you know that the official client for writing Discord clients in Java is built on project Reactor? Me either! How cool! &lt;a href="https://github.com/Discord4J/Discord4J"&gt;Discord4J/Discord4J: Discord4J is a fast, powerful, unopinionated, reactive library to enable quick and easy development of Discord bots for Java, Kotlin, and other JVM languages using the official Discord Bot API.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blog.frankel.ch/multiple-ways-configure-spring/"&gt;Multiple ways to configure Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/26/new-features-for-spring-cloud-kubernetes-in-spring-cloud-2021-0-0-m3"&gt;New Features For Spring Cloud Kubernetes In Spring Cloud 2021.0.0-M3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://alpaqastudio.com/sign-up/ide-for-cosmos-db?twclid=11451301638879133696"&gt;Professional GUI and IDE for Azure Cosmos DB: Sign up for the free plan or 30 days trial - Alpaqa Studio for Cosmos DB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/25/spot-every-spring-boot-application-issue-on-the-spot-using-appdynamics"&gt;Spot every Spring Boot application issue on the spot using AppDynamics!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/21/spring-boot-2-4-12-is-now-available"&gt;Spring Boot 2.4.12 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/21/spring-boot-2-5-6-is-now-available"&gt;Spring Boot 2.5.6 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/21/spring-boot-2-6-0-rc1-is-available-now"&gt;Spring Boot 2.6.0-RC1 is available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/26/spring-cloud-openfeign-versions-2-2-10-release-3-0-5-and-3-1-0-m4-are-now-available"&gt;Spring Cloud OpenFeign versions 2.2.10.RELEASE, 3.0.5 and 3.1.0-M4 are now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring-cloud-incubator.github.io/spring-cloud-sleuth-otel/docs/1.1.0-M3/reference/html/"&gt;Spring Cloud Sleuth OTel Reference Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/20/spring-cloud-square-0-4-0-m2-is-available"&gt;Spring Cloud Square 0.4.0-M2 is available.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/25/spring-cloud-square-0-4-0-m3-is-available"&gt;Spring Cloud Square 0.4.0-M3 is available.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/21/spring-framework-5-3-12-available-now"&gt;Spring Framework 5.3.12 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://apiexpert.medium.com/spring-graphql-graphql-done-right-d7c3a591d0bd"&gt;Spring GraphQL : GraphQL Done Right&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.confluent.io/blog/using-spring-with-apache-kafka-full-introduction/"&gt;Using Spring with Apache Kafka - Full Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/bkaminnski/links-spring"&gt;bkaminnski/links-spring: Links project implemented in Spring Boot. Demonstrates a composite UI pattern implemented in react.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;VSCode Java is 1.0! Hurray! &lt;a href="https://github.com/redhat-developer/vscode-java/blob/master/CHANGELOG.md#100-october-19th-2021"&gt;vscode-java/CHANGELOG.md at master · redhat-developer/vscode-java&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/kuberhealthy/kuberhealthy"&gt;kuberhealthy/kuberhealthy: A Kubernetes operator for running synthetic checks as pods. Works great with Prometheus!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -1,5 +1,8 @@
 package com.spacedev.board.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -7,7 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
 	@GetMapping("/")
-	public String main() {
+	public String main(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		String name = "guest" + session.toString().substring(session.toString().indexOf("@"));
+		session.setAttribute("sessionId", name);
+		
 		return "index";
 	}
 }
