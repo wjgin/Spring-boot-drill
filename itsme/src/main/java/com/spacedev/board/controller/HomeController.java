@@ -11,9 +11,6 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String main(HttpServletRequest request) {
-		HttpSession session = request.getSession();
-		String name = "guest" + session.toString().substring(session.toString().indexOf("@"));
-		session.setAttribute("sessionId", name);
 		
 		return "index";
 	}

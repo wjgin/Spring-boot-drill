@@ -3,6 +3,7 @@
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.genuitec.eclipse.code.ui.codemix.category"/>
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
@@ -27,7 +28,8 @@
 	</section>
 	<section name="EditorSelectionDialog">
 		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.wst.jsdt.chromium.debug.ui.editors.JsEditor"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="com.genuitec.eclipse.code.typescript"/>
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".js"/>
 	</section>
 	<section name="ImportExportAction">
 	</section>
