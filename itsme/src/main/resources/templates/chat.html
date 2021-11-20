@@ -18,14 +18,19 @@
 							<input type="text" class="form-control" placeholder="Search...">
 						</div>
 						<ul class="list-unstyled chat-list mt-2 mb-0">
-							<li class="clearfix">
+						
+						<!-- master status -->
+							<li class="clearfix" onclick="activeToggle(this)">
 							<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
 								<div class="about">
 									<div class="name">Master</div>
-									<div id="master-status" class="status">
-										<i class="fa fa-circle offline"></i> left 7 mins ago
+									<div id="master" class="status">
+										<i id="master-status-icon" class="fa fa-circle offline"></i> 
+										<span id = master-status-content>offline</span>
 									</div>
 								</div></li>
+								
+							<!--
 							<li class="clearfix active"><img
 								src="https://bootdey.com/img/Content/avatar/avatar2.png"
 								alt="avatar">
@@ -69,6 +74,7 @@
 										<i class="fa fa-circle offline"></i> offline since Oct 28
 									</div>
 								</div></li>
+								-->
 						</ul>
 					</div>
 					
@@ -119,9 +125,9 @@
 
 
 	<script type="text/javascript" th:inline="javascript">
-
+	
          document.querySelector("#disconn").addEventListener("click", (e) => {
-        	 location.href = "/";
+        	location.href = "/";
             onClose(e);
          })
          
@@ -130,10 +136,9 @@
          });
 
          const websocket = new WebSocket("ws://localhost:8080/ws/chat");
-
-         websocket.onmessage = onMessage;
-         websocket.onopen = onOpen;
-         websocket.onclose = onClose;
+	         websocket.onmessage = onMessage;
+	         websocket.onopen = onOpen;
+	         websocket.onclose = onClose;
 
          // send a message
          function send(){
@@ -160,21 +165,31 @@
              var senderId = null;
              var message = null;
              var arr = data.split("&");
+             
            	 senderId = arr[0];
              message = arr[1];
              time = arr[2];
              masterStatus = arr[3];
              myself = arr[4];
              
-             console.log('masterStatus : >>> ' + masterStatus);
-             // master online / offline
-             if(masterStatus == "online") {
-				 let str = '<i class="fa fa-circle online"></i> online';
-            	 document.querySelector('#master-status').innerHTML = str;
-             } else {
-				 let str = '<i class="fa fa-circle offline"></i> offline';
-            	 document.querySelector('#master-status').innerHTML = str;
-             }
+			 var preStatus = document.getElementById('master-status-content').innerHTML;             
+            
+			 console.log('현재 마스터 상태 : >>> ',masterStatus );
+			 console.log('현재 html 상태 : >>> ',preStatus );
+			 
+			// update master status
+			if(preStatus != masterStatus) {
+				var icon = document.getElementById('master-status-icon');
+	            
+				if(preStatus == "online") {
+	            	 icon.classList.remove('online');
+	            	 icon.classList.add('offline');
+	             } else {
+	            	 icon.classList.remove('offline');
+	            	 icon.classList.add('online');
+	             }
+				document.getElementById('master-status-content').innerHTML = masterStatus;
+			}
              
              if(myself == 'true') {
             	// insert a message into chat content to myself
@@ -206,6 +221,16 @@
              }
             // scroll down
             chatContent.scrollTop = chatContent.scrollHeight;
+         }
+         
+         
+         function activeToggle(element){
+        	 if(!element.classList.contains('active')){
+        		 element.classList.add('active');
+        	 } else {
+        		 element.classList.remove('active');
+        	 };
+        	 
          }
 	</script>
 </body>

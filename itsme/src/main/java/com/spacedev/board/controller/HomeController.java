@@ -11,7 +11,6 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String main(HttpServletRequest request) {
-		
 		return "index";
 	}
 }

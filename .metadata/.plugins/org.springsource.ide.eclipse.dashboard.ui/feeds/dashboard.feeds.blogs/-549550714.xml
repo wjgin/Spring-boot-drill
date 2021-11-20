@@ -5,7 +5,125 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-11-19T01:36:00Z</updated>
+  <updated>2021-11-19T08:39:41Z</updated>
+  <entry>
+    <title>Spring Boot 2.6 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/19/spring-boot-2-6-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Madhura Bhave</name>
+    </author>
+    <id>tag:spring.io,2021-11-19:4617</id>
+    <updated>2021-11-19T08:39:41Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring Boot team and everyone that has contributed, I am pleased to announce that Spring Boot 2.6.0 has been released and is available from Maven Central. &lt;/p&gt;
+&lt;p&gt;This release adds a significant number of new features and improvements. For full &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.6-Release-Notes#upgrading-from-spring-boot-25"&gt;upgrade instructions&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.6-Release-Notes#new-and-noteworthy"&gt;new and noteworthy&lt;/a&gt; features please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.6-Release-Notes"&gt;release notes&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-new-in-2-6" class="anchor" name="what-rsquo-s-new-in-2-6"&gt;&lt;/a&gt;What&amp;rsquo;s new in 2.6&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for &lt;code&gt;SameSite&lt;/code&gt; attributes on session cookies for servlet applications&lt;/li&gt;
+  &lt;li&gt;Support for configuring health groups on the main or management port&lt;/li&gt;
+  &lt;li&gt;Enhanced &lt;code&gt;/info&lt;/code&gt; endpoint with Java Runtime information&lt;/li&gt;
+  &lt;li&gt;Support for testing Spring MVC using &lt;code&gt;WebTestClient&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Auto-configuration for &lt;code&gt;spring-rabbit-stream&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Support for pluggable rules for sanitizing properties in &lt;code&gt;/env&lt;/code&gt; and &lt;code&gt;configprops&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#dependency-upgrades" class="anchor" name="dependency-upgrades"&gt;&lt;/a&gt;Dependency upgrades&lt;/h3&gt;
+&lt;p&gt;Spring Boot 2.6 moves to new versions of several Spring projects:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-2021.1-%28Q%29-Release-Notes"&gt;Spring Data 2021.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-hateoas/releases/tag/1.4.0"&gt;Spring HATEOAS 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-amqp/docs/2.4.x/reference/html/#changes-in-2-4-since-2-3"&gt;Spring AMQP 2.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-kafka/docs/2.8.x/reference/html/#spring-kafka-intro-new"&gt;Spring Kafka 2.8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-security/reference/5.6.0/whats-new.html"&gt;Spring Security 5.6&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-session-bom/wiki/Spring-Session-2021.1-Release-Notes"&gt;Spring Session 2021.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’ve also upgraded to the latest stable releases of other third-party libraries wherever possible. Please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.6-Release-Notes#dependency-upgrades"&gt;release notes&lt;/a&gt; for details.&lt;/p&gt;&lt;h3&gt;&lt;a href="#other-changes" class="anchor" name="other-changes"&gt;&lt;/a&gt;Other changes&lt;/h3&gt;
+&lt;p&gt;There&amp;rsquo;s a whole host of other changes and improvements that are documented in the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.6-Release-Notes"&gt;release notes&lt;/a&gt;. You can also find a list of deprecated classes and methods that we plan to remove in the next version.&lt;/p&gt;
+&lt;p&gt;Additionally, Spring Boot 2.4.0 has now reached end of OSS support. More information on Spring Boot&amp;rsquo;s support dates can be found &lt;a href="https://spring.io/projects/spring-boot#support"&gt;here.&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#thank-you" class="anchor" name="thank-you"&gt;&lt;/a&gt;Thank you&lt;/h2&gt;
+&lt;p&gt;We want to take this opportunity to again thank all our users and contributors.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask at &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;on Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.6.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Get to Know a Kubernetes Operator!</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/19/get-to-know-a-kubernetes-operator" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-11-13:4604</id>
+    <updated>2021-11-19T08:00:00Z</updated>
+    <content type="html">&lt;style style = "text/css"&gt;&#xD;
+ &#xD;
+&#xD;
+.logo {&#xD;
+ --gutter: 10px;  &#xD;
+ --logo-width : 200px;&#xD;
+ grid-area: logo ;&#xD;
+ border: 1px solid white ;&#xD;
+ width: var(--logo-width) ;&#xD;
+ background-color: white ; &#xD;
+ padding: var(--gutter);&#xD;
+ border-radius: var(--gutter);  &#xD;
+&#xD;
+} &#xD;
+&lt;/style&gt;
+&lt;p&gt;Hi, Spring fans! It&amp;rsquo;s Friday, and you know what that means? Some poor schlub somewhere is trying fruitlessly to get something deployed to production, or at least rolled back consistently, in time for dinner. And it&amp;rsquo;s not working. I&amp;rsquo;ve been there. Deployments are hard. There&amp;rsquo;s nuance in deployment. I love Kubernetes as much as the next Operator, but let&amp;rsquo;s not pretend it&amp;rsquo;s the pinnacle of productivity. Quite the contrary. There&amp;rsquo;s a whole cottage industry around simplifying application deployments with Kubernetes. See for example &lt;a href="https://knative.dev/docs/"&gt;KNative&lt;/a&gt;, &lt;a href="https://tanzu.vmware.com/developer/guides/cf4k8s-gs/"&gt; Cloud Foundry on Kubernetes&lt;/a&gt;, or &lt;a href="https://azure.microsoft.com/en-us/services/spring-cloud/#overview"&gt;Azure Spring Cloud&lt;/a&gt;. These tools are awesome - they provide opinions about how to quickly deploy and manage typical 12-factor style online web applications. They have strong opinions that are loosely held. They&amp;rsquo;re rails for particular workloads - rails that lead to production, &lt;em&gt;if&lt;/em&gt; you can fit your workload into a particular, PaaS-friendly shape. That&amp;rsquo;s great for so much of the workloads we run out there, but not &lt;em&gt;all&lt;/em&gt; of them. Our applications will invariably want to talk to something more substantial, like Apache Kafka, and those things are never so easy to deploy.&lt;/p&gt;
+&lt;p&gt;Kubernetes has an answer for this: &lt;a href="https://coreos.com/operators/"&gt;the Operator&lt;/a&gt;. It&amp;rsquo;s hard to say what a typical distributed database looks like, let alone a standard message queue, or a regular mail server, or whatever. They&amp;rsquo;re all pretty unique and have their usage patterns. So Kubernetes offers primitives, like the Kubernetes &lt;code&gt;StatefulSet&lt;/code&gt; CRD, that - taken together - can be used to successfully deploy a service with replication and backups and quorums and what all. But it&amp;rsquo;s no fun to figure out when and in which we should deploy things. Nobody wants to do that or try to debug it when something goes wrong. &lt;/p&gt;&lt;h2&gt;&lt;a href="#operators" class="anchor" name="operators"&gt;&lt;/a&gt;Operators&lt;/h2&gt;
+&lt;p&gt;Vendors of various services have taken great pains to package up their wares as Kubernetes operators. Operators are, basically, just programs that live in your Kubernetes cluster and interact with the Kubernetes API to programmatically deploy and - should something go wrong - redeploy the various moving parts of a service. &lt;/p&gt;
+&lt;p&gt;Most vendors extend three options to us, the wayward application developers that want to get to the happiest place on earth, production:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;deploy the OSS bits yourself. I call this the YOLO option.&lt;/li&gt;
+  &lt;li&gt;deploy the vendor&amp;rsquo;s (more often than not OSS) Operator for Kubernetes&lt;/li&gt;
+  &lt;li&gt;use the vendor&amp;rsquo;s hosted, cloudy SaaS thing. I tend to do this option whenever I can. Of course, it costs a few bucks, but the peace of mind? Priceless.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you don&amp;rsquo;t want to take the plunge and go for the third option, then the second option is your best bet if you know where to look. So, let&amp;rsquo;s look at some operators that I like and use in my day-to-day work building Spring applications. &lt;/p&gt;
+&lt;p&gt;The installation of these is usually some combination of the following steps, in roughly the next order:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;set up the appropriate and requisite cluster permissions for your Kubernetes installation&lt;/li&gt;
+  &lt;li&gt;Get the various operator resource definitions installed by either &lt;code&gt;kubectl applying&lt;/code&gt; some definitions, OR, using a Helm chart&lt;/li&gt;
+  &lt;li&gt;Provisioning/configuring an instance of the CRD managed by the Operator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After a while, you&amp;rsquo;ll want to upgrade to the newer versions of that infrastructure, so you&amp;rsquo;ll typically either use Helm or apply the updated definitions. In addition, many (but not all!) have built-in support for failover and replication.&lt;/p&gt;&lt;h3&gt;&lt;a href="#rabbitmq" class="anchor" name="rabbitmq"&gt;&lt;/a&gt;RabbitMQ&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/rabbitmq.png"/&gt;
+&lt;p&gt;Many messaging brokers are on this list because they have some of the more exciting and potentially fragile deployments. RabbitMQ is no exception. RabbitMQ is, of course, the AMQP-spec-implementing, queue-centric message broker developed primarily by Tanzu (I work on the Spring team, as part of Tanzu), a part of VMWare. I loved RabbitMQ before VMWare ever owned it, and I use it routinely. Heck, I even pay for hosted RabbitMQ with services &lt;a href="https://www.cloudamqp.com/"&gt;from Cloud AMQP&lt;/a&gt;. But now I don&amp;rsquo;t need to. &lt;a href="https://www.rabbitmq.com/kubernetes/operator/operator-overview.html"&gt;There&amp;rsquo;s an operator from the RabbitMQ team itself&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#apache-kafka" class="anchor" name="apache-kafka"&gt;&lt;/a&gt;Apache Kafka&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/kafka.png"/&gt;
+&lt;p&gt;Alrighty, I&amp;rsquo;ll bet you were looking for this one. Apache Kafka is a topic-centric message queue that fell out of the work that Linkedin and others were doing to Apache Kafka is notoriously hard to operationalize. Heck, it&amp;rsquo;s even had components, like Apache Zookeeper, that themselves are notoriously hard to operationalize! As I write this, Apache Zookeeper is out the door, and so you may not have to deal with it when you one day read this, but it&amp;rsquo;s still a thing now. &lt;/p&gt;
+&lt;p&gt;You have two excellent choices here. First, there&amp;rsquo;s the Confluent Operator for Kubernetes, which is &lt;a href="https://docs.confluent.io/operator/current/overview.html"&gt;not opensource but is easy enough to test and try&lt;/a&gt;. It&amp;rsquo;s also made and supported by Confluent, the folks who drive the growth of Apache Kafka and its ecosystem. It&amp;rsquo;s inarguably the more sophisticated project &lt;em&gt;and&lt;/em&gt; it helps the folks who work on the code. So, if you can do this, you should. &lt;/p&gt;
+&lt;p&gt;Otherwise, there&amp;rsquo;s a top-rated OSS operator for Apache Kafka &lt;a href="https://github.com/strimzi/strimzi-kafka-operator"&gt;called Strimzi&lt;/a&gt;. This open-source project powers commercial offerings from various vendors like IBM, too. I like this one, as well, for a few reasons, including that the code is itself in Java, not Go, so it&amp;rsquo;s fertile ground for people who want to learn how to write an operator. (You do want to learn how to write an operator, don&amp;rsquo;t ya&amp;rsquo;?)&lt;/p&gt;&lt;h3&gt;&lt;a href="#artemis" class="anchor" name="artemis"&gt;&lt;/a&gt;Artemis&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/activemq.png"/&gt;
+&lt;p&gt;Remember &lt;a href="https://en.wikipedia.org/wiki/HornetQ"&gt;JBoss HornetQ&lt;/a&gt;? It was &lt;em&gt;awesome&lt;/em&gt; and offered game-changing, world-class leading performance (at the time) centered around the JMS API. The HornetQ project eventually ended up being folded into Apache ActiveMQ, another super popular JMS message broker of the time. A new project that was more than the sum of the parts was released: Apache Artemis. &lt;a href="https://artemiscloud.io/"&gt;And, lo, there&amp;rsquo;s an OSS operator&lt;/a&gt;! Want a very fast, outstanding, world-class JMS broker at OSS prices? Now you&amp;rsquo;ve got one. &lt;/p&gt;&lt;h3&gt;&lt;a href="#cassandra" class="anchor" name="cassandra"&gt;&lt;/a&gt;Cassandra&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/cassandra.png"/&gt;
+&lt;p&gt;Apache Cassandra is a super-popular columnar database that engineers created at Facebook. It prioritizes &lt;em&gt;Availability&lt;/em&gt; and &lt;em&gt;Partitionability&lt;/em&gt; over consistency in the CAP theorem. It also powers some of the largest sites on the planet. And you can use it, too. There&amp;rsquo;s a delightful operator called &lt;a href="https://k8ssandra.io/"&gt;K8ssandra&lt;/a&gt; by the good folks over at DataStax, the company behind Apache Cassandra and its emerging ecosystem. From the website, it builds on &amp;ldquo;the rock-solid Apache Cassandra® NoSQL database&amp;rdquo; and &amp;ldquo;brings together a complete operational data platform for Kubernetes including APIs, monitoring, and backups.&amp;rdquo; Sounds good to me! &lt;/p&gt;&lt;h3&gt;&lt;a href="#yugabytedb" class="anchor" name="yugabytedb"&gt;&lt;/a&gt;YugabyteDB&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/yugabyte.png"/&gt;
+&lt;p&gt;Hey, remember how we talked about Apache Cassandra, &lt;em&gt;way back&lt;/em&gt; in the paragraph that precedes this one, and I said that it prioritized AP over C in the CAP theorem? What if you had a distributed database that &lt;em&gt;felt&lt;/em&gt; like a single-node PostgreSQL instance and was compatible with PostgreSQL while reducing the extent to which you needed to compromise for C so much that it&amp;rsquo;s effectively not a compromise anymore? That&amp;rsquo;s what YugabyteDB, created by some of the same folks who designed Apache Cassandra in the first place, sets out to do. I love it. &lt;a href="https://docs.yugabyte.com/latest/deploy/kubernetes/single-zone/oss/yugabyte-operator/"&gt;And I love that there&amp;rsquo;s an operator&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#elasticsearch" class="anchor" name="elasticsearch"&gt;&lt;/a&gt;ElasticSearch&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/elasticsearch.png"/&gt;
+&lt;p&gt;Elastic is the company behind ElasticSearch, the popular search engine. It&amp;rsquo;s incredible and can be used to add natural language search capabilities to an application instantly. It&amp;rsquo;s also, as you can imagine, compromised of a lot of moving parts and the perfect candidate for an operator. Elastic will sell you Elastic Cloud access if you like. That&amp;rsquo;s as easy as it gets. Or, you could use Elastic Cloud on Kubernetes (ECK), which is their Operator for &lt;a href="https://www.elastic.co/downloads/elastic-cloud-kubernetes"&gt;your particular Kubernetes installation&lt;/a&gt;. It installs ElasticSearch and Kibana, APM Server, Enterprise Search, Beats, Elastic Agent, and Elastic Maps Server. Either way, enjoy being able to find that needle in your organization&amp;rsquo;s haystack again! &lt;/p&gt;&lt;h3&gt;&lt;a href="#prometheus" class="anchor" name="prometheus"&gt;&lt;/a&gt;Prometheus&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/prometheus.png"/&gt;
+&lt;p&gt;Prometheus is a popular time-series database that scales with your Kubernetes workloads. It was developed in the cradle of the Kubernetes ecosystem and works well for Kubernetes-deployed services. No surprise: there&amp;rsquo;s an excellent &lt;a href="https://github.com/coreos/prometheus-operator"&gt;Prometheus Operator, too&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#mysql" class="anchor" name="mysql"&gt;&lt;/a&gt;MySQL&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/mysql.png"/&gt;
+&lt;p&gt;Do you want to run MySQL? You&amp;rsquo;re not alone! Oracle has even built &lt;a href="https://github.com/mysql/mysql-operator"&gt;an OSS Kubernetes operator to run MySQL in your cluster&lt;/a&gt;. This Operator manages the entire lifecycle, including backups and restorations. &lt;/p&gt;&lt;h3&gt;&lt;a href="#mongodb" class="anchor" name="mongodb"&gt;&lt;/a&gt;MongoDB&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/mongodb.png"/&gt;
+&lt;p&gt;MongoDB is a popular NoSQL datastore that&amp;rsquo;s, &lt;em&gt;ahem&lt;/em&gt;, &amp;ldquo;web scale.&amp;rdquo; &lt;/p&gt;
+&lt;p&gt;There are two options. The &lt;a href="https://github.com/mongodb/mongodb-enterprise-kubernetes"&gt;MongoDB Enterprise Kubernetes Operator&lt;/a&gt; is an Enterprise product, available under the Enterprise Advanced license. The Operator enables easy deployment of the following applications into Kubernetes clusters: &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;MongoDB&lt;/em&gt; - Replica Sets, Sharded Clusters, and Standalones - with authentication, TLS, and many more options.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ops Manager&lt;/em&gt; - the enterprise management, monitoring, and backup platform for MongoDB. The Operator can install and manage Ops Manager in Kubernetes for you. In addition, Ops Manager can manage MongoDB instances both inside and outside Kubernetes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You might also try &lt;a href="https://github.com/mongodb/mongodb-kubernetes-operator"&gt;the MongoDB Community Operator&lt;/a&gt;, which deploys MongoDB community into Kubernetes clusters.&lt;/p&gt;&lt;h3&gt;&lt;a href="#postgresql" class="anchor" name="postgresql"&gt;&lt;/a&gt;PostgreSQL&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/postgresql.png"/&gt;
+&lt;p&gt;Want to run PostgreSQL at scale? Me too! And, evidently, so do a good many others, as well! Unfortunately, I couldn&amp;rsquo;t find a single, well-known, and endorsed Operator for PostgreSQL - I found many, but none that seemed &amp;ldquo;official,&amp;rdquo; whatever that means. I&amp;rsquo;ve used this one &lt;a href="https://github.com/zalando/postgres-operator"&gt;from German online fashion platform Zalando&lt;/a&gt; before, and it works well. &lt;/p&gt;&lt;h3&gt;&lt;a href="#couchbase" class="anchor" name="couchbase"&gt;&lt;/a&gt;Couchbase&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/couchbase.png"/&gt;
+&lt;p&gt;A long time ago, in a galaxy far away, CouchDB and Membase merged, and the result was Couchbase. Couchbase is a key-value store that can store lots of different kinds of data. There&amp;rsquo;s &lt;a href="https://www.couchbase.com/products/cloud/kubernetes"&gt;an enterprise (read: paid) Kubernetes operator&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#fluxcd" class="anchor" name="fluxcd"&gt;&lt;/a&gt;FluxCD&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/flux.png"/&gt;
+&lt;p&gt;Alright, I grant you. However, this one is a bit of a freebie. It&amp;rsquo;s FluxCD. It manages continuous delivery in your Kubernetes cluster for your Kubernetes cluster. That is, there&amp;rsquo;s no natural way to run it &lt;em&gt;without&lt;/em&gt; running it in Kubernetes. Nonetheless, &lt;a href="https://github.com/weaveworks/flux"&gt;it does technically have an operator&lt;/a&gt;! &lt;/p&gt;&lt;h3&gt;&lt;a href="#nats" class="anchor" name="nats"&gt;&lt;/a&gt;NATS&lt;/h3&gt;
+&lt;img  style = "background-color : black;" class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/nats.png"/&gt;
+&lt;p&gt;&lt;a href="https://nats.io/"&gt;NATS&lt;/a&gt; is a messaging (another one!) technology that Derek Collison developed to support the message-bus requirements of Cloud Foundry more than a decade ago. It&amp;rsquo;s a very lightweight, super-fast message broker that is great for scaling systems. In addition, there&amp;rsquo;s a Spring Cloud Stream binder, a Java client, and - obviously - &lt;a href="https://github.com/nats-io/nats-operator"&gt;there&amp;rsquo;s a Kubernetes operator&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#arangodb" class="anchor" name="arangodb"&gt;&lt;/a&gt;ArangoDB&lt;/h3&gt;
+&lt;img class ="logo" src="https://raw.githubusercontent.com/joshlong/blog-images/master/get-to-know-an-operator/arangodb.png"/&gt;
+&lt;p&gt;ArangoDB is a multi-model distributed database. I haven&amp;rsquo;t used it much. The one time I did, it was easy enough to get going on my local machine and - importantly - &lt;a href="https://github.com/arangodb/kube-arangodb"&gt;on Kubernetes, thanks to this Operator&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;In my experience, the first thing I tried to do when I got into Kubernetes was to deploy a stateless microservice using Spring Boot. I knew that these kinds of stateless microservices were the happy path for Kubernetes, and I didn&amp;rsquo;t want to go uphill. This experience was satisfying and got me hooked. &amp;ldquo;This thing has potential!&amp;rdquo; I exclaimed. Then I spent time trying to optimize for stateless microservices. I learned Istio, KNative, and so on. The Tanzu Application Platform seems like the best fit for deploying applications of all the things I&amp;rsquo;ve learned. (I only wish it&amp;rsquo;d existed then as it does now! I would&amp;rsquo;ve undoubtedly saved myself scads of time!)&lt;/p&gt;
+&lt;p&gt;Then, I wondered how I would get my data on the platform. And that&amp;rsquo;s where the optimism dwindles. 90% of my journey on Kubernetes has been figuring out how to make infrastructure work reliably on the platform. Things like message queues, databases, and more. It took learning how to work with Helm charts, operators, and StatefulSets before I started even understanding the problem space. If I had to do it over again, I&amp;rsquo;d spend less time treading water with microservices and dive almost immediately into getting my favorite database working reliably. Start small. Then learn Helm. Then discover the operator pattern. Once you&amp;rsquo;ve got those arrows in your quill, anything&amp;rsquo;s possible. Then the force-multiplying effect of composition and reuse starts to kick in at the platform level. &lt;/p&gt;
+&lt;p&gt;In this post, we&amp;rsquo;ve looked at a few operators that I found pleasant enough to use and powerful enough to be worth using. I&amp;rsquo;d love to know what other operators you&amp;rsquo;ve found to be helpful in your experiences.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring AMQP (Spring for RabbitMQ) 2.4 is Now Available</title>
     <link rel="alternate" href="https://spring.io/blog/2021/11/18/spring-amqp-spring-for-rabbitmq-2-4-is-now-available" />
@@ -424,33 +542,6 @@
     <content type="html">&lt;p&gt;Spring Cloud Data Flow team is pleased to announce the release of 2.8.4 and 2.9.1&lt;/p&gt;
 &lt;p&gt;Releases &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.9.1"&gt;2.9.1&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.8.4"&gt;2.8.4&lt;/a&gt; contains a quick bug fix and more changes were made in &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.9.0"&gt;2.9.0&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.8.3"&gt;2.8.3&lt;/a&gt;. For complete list of changes for &lt;code&gt;2.9.x&lt;/code&gt; you can see its milestone and rc notes in &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases"&gt;releases&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-dataflow"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Bootiful Podcast: Legend, Dutchess founder, Devoxx4Kids contributor, and fellow Java Champion Linda van der Pal</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/11/04/bootiful-podcast-legend-dutchess-founder-devoxx4kids-contributor-and-fellow-java-champion-linda-van-der-pal" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-11-04:4594</id>
-    <updated>2021-11-04T20:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this episode &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Dutchess founder, &lt;a href="https://twitter.com/Devoxx4KidsNL"&gt;Devoxx4Kids Netherlands (@Devoxx4KidsNL)&lt;/a&gt; leader, inspiring person, and fellow Java Champion &lt;a href="https://twitter.com/DuchessFounder"&gt;Linda van der Pal (@DuchessFounder)&lt;/a&gt;. &lt;/p&gt;
-&lt;iframe title="Legend, Dutchess founder, Devoxx4Kids contributor, and fellow Java Champion Linda van der Pal  " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=5ke2w-11223be-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Gateway versions 2.2.10.RELEASE and 3.0.5 are now available</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/11/04/spring-cloud-gateway-versions-2-2-10-release-and-3-0-5-are-now-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Spencer Gibb</name>
-    </author>
-    <id>tag:spring.io,2021-11-04:4593</id>
-    <updated>2021-11-04T19:00:34Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that Spring Cloud Gateway versions 2.2.10.RELEASE and 3.0.5.&lt;/p&gt;
-&lt;p&gt;These are primarily security releases with fixes for the &lt;a href="https://tanzu.vmware.com/security/cve-2021-22051"&gt;CVE-2021-22051&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;These versions will be picked up later by the 2020.0.x and 2021.0.x release trains, however, we recommend you upgrade Spring Cloud Gateway in your projects to these most recent versions.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

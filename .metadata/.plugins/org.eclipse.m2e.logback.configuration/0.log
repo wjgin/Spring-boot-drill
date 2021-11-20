@@ -23,3 +23,4 @@
 2021-11-19 11:51:56,828 [Worker-1: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /Users/spacejin/Documents/STS/Spring_boot/.metadata/com.genuitec.eclipse.webclipse.livepreview/1/store
 2021-11-19 12:03:09,017 [Worker-16: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2021-11-19 12:03:45,524 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-11-20 12:36:53,561 [Worker-10: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
