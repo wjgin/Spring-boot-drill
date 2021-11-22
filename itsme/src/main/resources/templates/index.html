@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Its Me - Space-Jin's portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="starboot/assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -38,6 +38,8 @@
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#activities">Activites</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="javascript:openDetail('/chat?id=guest')">live chat</a></li>
 				</ul>
 			</div>
 		</div>
@@ -82,7 +84,9 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="starboot/assets/img/portfolio/kkakdugi.png" alt="..." />
+                            <div class="w-100 d-flex align-items-center justify-content-center">
+                          	  <img class="img-fluid" src="starboot/assets/img/portfolio/kkakdugi.png" alt="..." />
+                            </div>
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -91,7 +95,9 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="starboot/assets/img/portfolio/cake.png" alt="..." />
+                            <div class="w-100 d-flex align-items-center justify-content-center" style="height: 289px;">
+	                            <img class="img-fluid" src="starboot/assets/img/portfolio/abook_logo.png" alt="..." />
+                            </div>
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -143,7 +149,7 @@
 			<div class="divider-custom divider-light">
 				<div class="divider-custom-line"></div>
 				<div class="divider-custom-icon">
-				<i class="fas fa-user-astronaut"></i>
+				<i class="fas fa-meteor"></i>
 				</div>
 				<div class="divider-custom-line"></div>
 			</div>
@@ -239,9 +245,9 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
+                            430, Tanjung-ro, Ilsandong-gu, Goyang-si, Gyeonggi-do
+                            <br/><br/>
+                            POST: 10337
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -312,7 +318,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Handsome account book</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -320,12 +326,17 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="starboot/assets/img/portfolio/cake.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="starboot/assets/img/portfolio/abook_logo.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <p class="mb-4">Java GUI project, using swing. It can manage my account book adding contents of my income, expenditure and details. It also has filter some options like date.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-rocket"></i>
 										Show source                                   
+                                    </button>
+<!--                                     <button type="button" class="btn btn-primary" onclick="window.open('https://spacejin.tistory.com/11?category=962400')" data-bs-dismiss="modal"> -->
+                                    <button type="button" class="btn btn-primary" onclick='openDetail("https://spacejin.tistory.com/11?category=962400")' data-bs-dismiss="modal">
+                                        <i class="fas fa-rocket"></i>
+										Show detail                                   
                                     </button>
                                 </div>
                             </div>
@@ -452,7 +463,7 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-rocket"></i>
+                                        <i class="fas fa-blogger"></i>
                                         Show source
                                     </button>
                                 </div>
@@ -467,5 +478,16 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <!-- Core JS-->
         <script src="starboot/js/scripts.js"></script>
+		<!-- button script -->
+		<script type="text/javascript">
+			function openDetail(url) {
+				var width = 750;
+				var height = 550;
+				var left = (window.screen.width - width) / 2;
+				var top = (window.screen.height - height) / 2;
+				window.open(url, 'detail', 'width=' + width +', height='+height +', left='+left +', top='+top +', location=no, status=no, scrollbar=yes');
+			}
+		</script>
     </body>
 </html>
+

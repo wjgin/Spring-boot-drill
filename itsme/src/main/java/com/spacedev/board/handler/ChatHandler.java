@@ -4,12 +4,10 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.json.simple.JSONArray;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -77,10 +75,11 @@ public class ChatHandler extends TextWebSocketHandler {
 		}
 
 		// send a message myself
-		dataMap.put("receiverId", senderId);
-		msg = json.writeValueAsString(dataMap);
-		session.sendMessage(new TextMessage(msg)); // send to myself
-
+		if(!senderId.equals(receiverId)) {
+			dataMap.put("receiverId", senderId);
+			msg = json.writeValueAsString(dataMap);
+			session.sendMessage(new TextMessage(msg)); // send to myself
+		}
 	}
 
 	// connection established
@@ -99,12 +98,12 @@ public class ChatHandler extends TextWebSocketHandler {
 		if (senderId.equals("master")) {
 			TextMessage msg = new TextMessage(senderId + " 님이 접속했습니다.");
 			sendToAll(msg, senderId);
-			// sendOnlineList(session);
 
 		} else {
 			Map<String, Object> data = new HashMap<>();
 			data.put("message", senderId + "님이 접속하셨습니다.");
 			data.put("receiverId", "master");
+			data.put("newOne", senderId);
 			
 			TextMessage msgToMaster = new TextMessage(json.writeValueAsString(data));
 			handleMessage(session, msgToMaster);
@@ -132,6 +131,7 @@ public class ChatHandler extends TextWebSocketHandler {
 			Map<String, Object> data = new HashMap<>();
 			data.put("message", senderId + "님이 퇴장하셨습니다.");
 			data.put("receiverId", "master");
+			data.put("outOne", senderId );
 			
 			TextMessage msg = new TextMessage(json.writeValueAsString(data));
 			handleMessage(session, msg);
@@ -182,6 +182,7 @@ public class ChatHandler extends TextWebSocketHandler {
 		dataMap.put("time", time);
 		dataMap.put("masterStatus", masterStatus);
 		dataMap.put("onlineList", onlineList);	// user online status
+		dataMap.put("newOne", "master");
 	
 		String receiverId = (String) dataMap.get("receiverId");
 
@@ -196,7 +197,7 @@ public class ChatHandler extends TextWebSocketHandler {
 			userSession.get(r).sendMessage(new TextMessage(msg));
 		}
 	}
-	
+	 
 	public void sendOnlineList(WebSocketSession session) throws IOException {
 		Map<String, Object> map = new HashMap<>();
 		
