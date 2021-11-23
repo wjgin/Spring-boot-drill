@@ -5,7 +5,57 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-11-19T08:39:41Z</updated>
+  <updated>2021-11-22T21:00:00Z</updated>
+  <entry>
+    <title>Spring HATEOAS 1.4 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/22/spring-hateoas-1-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Oliver Drotbohm</name>
+    </author>
+    <id>tag:spring.io,2021-11-22:4619</id>
+    <updated>2021-11-22T21:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;I am excited to announce that Spring HATEOAS 1.4 GA has been part of the cascade of releases that lead to the Spring Boot 2.6 last week.
+The release ships a couple of new features and all bug fixes we have incorporated in the 1.3.x line.
+The most notable new features are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Full support for level 4 URI templates&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for non-composite request parameter rendering&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved HAL-FORMS support (additional property constraints, custom media types)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Additional HTML input types (checkbox, radio, file)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;General dependency upgrades, including Spring Framework 5.3.13 and Jackson 2.13.9.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Find more detailed information about all changes made in the 1.4 line in the release&amp;#8217;s &lt;a href="https://docs.spring.io/spring-hateoas/docs/1.4.0/changelog.txt"&gt;change log&lt;/a&gt;.
+The release was included in the Spring Boot 2.6 release &lt;a href="https://spring.io/blog/2021/11/19/spring-boot-2-6-is-now-available"&gt;announced last week&lt;/a&gt;.
+In other words, if you have upgraded to that, you&amp;#8217;ve already successfully upgraded to Spring HATEOAS 1.4.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We have also released maintenance versions for the &lt;a href="https://github.com/spring-projects/spring-hateoas/releases/tag/1.3.6"&gt;1.3&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-hateoas/releases/tag/1.2.11"&gt;1.2&lt;/a&gt; lines.
+Please note, that &lt;a href="https://github.com/spring-projects/spring-hateoas/releases/tag/1.2.11"&gt;1.2.11&lt;/a&gt; is the last release of that branch and 1.2 is going out of OSS maintenance.
+Find more about the support timelines for each branch in the &lt;a href="https://spring.io/projects/spring-hateoas#support"&gt;newly introduced tab&lt;/a&gt; of our project homepage.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Also note, that due to a typo during the release procedure for 1.2.11, a 1.12.11 release has made it onto Maven Central.
+The binaries are logically equivalent to 1.2.11, but their presence is likely to cause trouble with tools automating library upgrades.
+We&amp;#8217;re currently working with Sonatype to investigate options to potentially remove the invalid artifacts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Boot 2.6 is now available</title>
     <link rel="alternate" href="https://spring.io/blog/2021/11/19/spring-boot-2-6-is-now-available" />
@@ -528,20 +578,6 @@
 &lt;div class="paragraph"&gt;
 &lt;p&gt;We encourage users to migrate their applications to Spring Authorization Server 0.2.0, as it is a direct replacement for the OAuth 2.0 Authorization Server support provided by Spring Security OAuth (legacy).&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Data Flow 2.8.4 and 2.9.1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/11/05/spring-cloud-data-flow-2-8-4-and-2-9-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Janne Valkealahti</name>
-    </author>
-    <id>tag:spring.io,2021-11-05:4596</id>
-    <updated>2021-11-05T10:09:09Z</updated>
-    <content type="html">&lt;p&gt;Spring Cloud Data Flow team is pleased to announce the release of 2.8.4 and 2.9.1&lt;/p&gt;
-&lt;p&gt;Releases &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.9.1"&gt;2.9.1&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.8.4"&gt;2.8.4&lt;/a&gt; contains a quick bug fix and more changes were made in &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.9.0"&gt;2.9.0&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.8.3"&gt;2.8.3&lt;/a&gt;. For complete list of changes for &lt;code&gt;2.9.x&lt;/code&gt; you can see its milestone and rc notes in &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases"&gt;releases&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-dataflow"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

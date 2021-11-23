@@ -163,9 +163,29 @@ body{
     margin-left: -10px
 }
 
+.d-flex {
+  display: flex !important;
+}
+
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
 .chat .chat-history .other-message {
     background: #efefef;
     text-align: right
+}
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
 }
 
 .chat .chat-history .other-message:after {
@@ -203,7 +223,17 @@ body{
     margin-right: 5%;
     
 }
-
+.circle{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	margin-right: 20px;
+	float: right;
+}
+.staging-count{
+	color: white;
+}
 
 .clearfix:after {
     visibility: hidden;
@@ -211,8 +241,9 @@ body{
     font-size: 0;
     content: " ";
     clear: both;
-    height: 0
+    height: 0;
 }
+    
 .input-group-prepend {
 	width: 100%;
 	height: 35px;

@@ -170,7 +170,7 @@ public class ChatHandler extends TextWebSocketHandler {
 
 		// sending time
 		LocalDateTime currentTime = LocalDateTime.now();
-		String time = currentTime.format(DateTimeFormatter.ofPattern("hh:mm a, E"));
+		String time = currentTime.format(DateTimeFormatter.ofPattern("hh:mm(a) E"));
 
 		// message data
 		String payload = message.getPayload();

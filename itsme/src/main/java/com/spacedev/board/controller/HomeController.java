@@ -13,4 +13,8 @@ public class HomeController {
 	public String main(HttpServletRequest request) {
 		return "index";
 	}
+	@GetMapping("/test")
+	public String test(HttpServletRequest request) {
+		return "cookie";
+	}
 }

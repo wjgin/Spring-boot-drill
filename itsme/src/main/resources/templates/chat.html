@@ -47,15 +47,14 @@
 										alt="avatar">
 									</a>
 									<div class="chat-about">
-										<span class="m-b-0" th:text="${session.sessionId}"></span>
+										<span id="myId" class="m-b-0" th:text="${session.sessionId}"></span>
 									</div>
 								</div>
 								
 							</div>
 						</div>
 						<div class="chat-history">
-							<ul style="overflow: scroll; height: 662px;" id="chat-content"
-								class="m-b-0">
+							<ul style="overflow: scroll; height: 662px;" id="chat-content" class="m-b-0">
 
 							</ul>
 						</div>
@@ -80,12 +79,17 @@
 
 
 	<script type="text/javascript" th:inline="javascript">
+		 var myId = document.getElementById('myId').textContent;
 		 var receiverId;
 	     var preOnlineList;
 	     var masterStatusContent;  
    		 var preMasterStatus;
 	   	 var masterStatus;
 		
+	   	 if(myId != 'master') {
+	   		 receiverId = 'master';
+	   	 }
+	   	 
          document.querySelector("#disconn").addEventListener("click", (e) => {
         	location.href = "/";
             onClose(e);
@@ -140,8 +144,8 @@
         	 
              var senderId = data.senderId;
              console.log('senderId >>> ', senderId)
-             var receiverId = data.receiverId;
-             console.log('receiverId >>> ', receiverId)
+             // var receiverId = data.receiverId;
+             // console.log('receiverId >>> ', receiverId)
              var message = data.message;
              console.log('message >>> ', message)
              var time = data.time;
@@ -153,59 +157,111 @@
              console.log('newOne >>> ', newOne);
              var outOne = data.outOne;
              console.log('outOne >>> ', outOne);
+            
+            
              
              // when user login
              // first login master -> get all onlined user list
              if(newOne != null) {
             	 console.log("new One is not null");
-				if(receiverId == 'master' && newOne == "master") {
+				if(myId == 'master' && newOne == "master") {
 					getOnlineList(onlineList);
-				} else if(receiverId == "master" && newOne != "master") {
+				} else if(myId == "master" && newOne != "master") {
 					console.log("new one login >>>> " , newOne);
 					insertOnlineList(newOne);
 				}
              }
-             
              // when user disconnect
-             if(outOne != null && receiverId == 'master') {
+             if(outOne != null && myId == 'master') {
             	 console.log("user disconnect >>> ", outOne);
             	 deleteOnlieList(outOne);
              }
-
-			 // insert a message into a chatting section
-             var chatContent =  document.querySelector("#chat-content");
-             if(senderId == receiverId) {
-            	// insert a message into chat content to myself
-                 var li = document.createElement('li');
-                 li.classList.add('clearfix');
-                 li.classList.add('float-right');
-                 var str = "<div class='message-data'>";
-                 str += "<span class='message-data-time'>";
-                 str += time + "</span></div>";
-                 str += "<div class='message my-message'>";
-                 str += message + "</div></li>";
-              
-                 li.innerHTML = str;
-                 chatContent.appendChild(li);
+             
+             // save or show message
+             if(myId=='master' && senderId != 'master' && receiverId != senderId) {
+            	addStagingMessage(senderId, time, message);
              } else {
-				// insert a message into chat content to other
-	            var li = document.createElement('li');
-	            li.classList.add('clearfix');
-	            var str =senderId + "<div class='message-data'>";
-	            str += "<span class='message-data-time'>";
-	            str += time + "</span></div>";
-	            str += "<div class='message other-message'>";
-	            str += message + "</div></li>";
-	         
-	            li.innerHTML = str;
-	            chatContent.appendChild(li);
+			 	insertMessage(senderId, time, message);
              }
+			
 	         
              // update master status
              updateMasterStatus();
              // scroll down
              scrollDown();
        	 }
+         
+         // insert a message
+         function insertMessage(senderId, time, message) {
+        	  var chatContent =  document.querySelector("#chat-content");
+              if(senderId == myId) {
+             	// insert a message into chat content to myself
+                  var li = document.createElement('li');
+                  li.classList.add('message-li', 'clearfix', 'float-right');
+                  var infoDiv = document.createElement('div');
+                  infoDiv.classList.add('message-data');
+                  li.appendChild(infoDiv);
+                  var timeSpan = document.createElement('span');
+                  timeSpan.classList.add('message-data-time');
+                  timeSpan.textContent = time;
+                  infoDiv.appendChild(timeSpan);
+                  var msgDiv = document.createElement('div');
+                  msgDiv.classList.add('message', 'my-message');
+                  msgDiv.textContent = message;
+                  li.appendChild(msgDiv);
+
+                  chatContent.appendChild(li);
+              } else {
+ 				// insert a message into chat content to other
+ 	            var li = document.createElement('li');
+                 li.classList.add('message-li', 'clearfix');
+                 var infoDiv = document.createElement('div');
+                 infoDiv.classList.add('message-data');
+                 li.appendChild(infoDiv);
+                 var timeSpan = document.createElement('span');
+                 timeSpan.classList.add('message-data-time');
+                 timeSpan.textContent = time;
+                 infoDiv.appendChild(timeSpan);
+                 var msgDiv = document.createElement('div');
+                 msgDiv.classList.add('message', 'other-message');
+                 msgDiv.textContent = message;
+                 li.appendChild(msgDiv);
+
+                 chatContent.appendChild(li);
+              }
+         }
+         
+         // save staging messages
+         function addStagingMessage(senderId, time, message) {
+        	
+        	 var container = [];
+      		 var data = {
+      				 "time":time,
+      				 "message":message,
+      				 "senderId":senderId
+      		 		}
+      		 console.log('staging message data >>> ', data)
+        	 if(sessionStorage.getItem(senderId) != null) {
+        	 	 container = JSON.parse(sessionStorage.getItem(senderId));
+        	 	 console.log('stagine message container >>> ', container);
+				 container.push(data);
+        	 } else {
+        		 container.push(data);
+        	 }
+			 sessionStorage.setItem(senderId, JSON.stringify(container));
+			 
+			 if(document.getElementById(senderId) != null) {
+				 var circle = document.getElementById(senderId).querySelector('.circle');
+				 var count = document.getElementById(senderId).querySelector('.circle > .staging-count');
+				 var n = count.textContent;
+				 if(n == ""){
+					 n = 0
+				 }
+				 n ++;
+				 circle.classList.remove('d-none');
+				 count.textContent = n;
+			 }
+         }
          
          // onclick onlined user icon
          function activeToggle(element){
@@ -215,15 +271,20 @@
         		 element.classList.remove('active');
         	 };
         	 var preReceiverId = receiverId;
-        	 receiverId = element.childNodes[2].childNodes[1].innerHTML;
-        	 console.log('reciverId >>> ', receiverId);
+        	 receiverId = element.querySelector('.about > .name').textContent;
+        	 console.log('<<<< toggleAction >>>>>')
+        	 console.log('receiverId >>> ', receiverId);
         	 console.log('preReceiverId >>> ', preReceiverId);
 			
         	 if(receiverId != preReceiverId && preReceiverId != null)
 	        	 document.getElementById(preReceiverId).classList.remove('active');
         	 
+        	 setChatHistory(preReceiverId);
+        	 document.getElementById('chat-content').innerHTML = "";
+        	 getChatHistory(receiverId);
         	 divideChatSection(receiverId);
-        	 
+        	 document.getElementById(receiverId).querySelector('.circle > .staging-count').textContent = "";
+        	 document.getElementById(receiverId).querySelector('.circle').classList.add('d-none');
          }
          
 	      // insert all users into online list
@@ -237,9 +298,11 @@
          
          // insert online user list
          function insertOnlineList(user) {
-	       	    var onlineUser =  document.querySelector("#online-user");
- 	        
-        		var li = document.createElement('li');
+	       	    
+        	 if(document.getElementById(user) == null) {
+	        	var onlineUser =  document.querySelector("#online-user");
+	 	            
+	       		var li = document.createElement('li');
 	            li.classList.add('clearfix');
 	            li.setAttribute('onclick', 'activeToggle(this)');
 	            li.setAttribute('id', user);
@@ -251,7 +314,15 @@
 	            str += '<span id=master-status-content>online</span></div>';
 				
 	            li.innerHTML = str;
+	            
+	            idiv = document.createElement('div');
+	            idiv.classList.add('circle', 'd-flex', 'align-items-center', 'justify-content-center', 'd-none');
+	            span = document.createElement('span');
+	            span.classList.add('staging-count');
+	            idiv.appendChild(span);
+	            li.appendChild(idiv);
 	            onlineUser.appendChild(li);
+        	 }
          }
          
          // delete outOne from onlineList
@@ -291,6 +362,49 @@
  			}
          }
          
+         // save chat history
+         function setChatHistory(name){
+        	 var value =[];
+        	 document.querySelectorAll('.message-li').forEach(item => {
+        		 
+        		 var time = item.querySelector('.message-data > .message-data-time').textContent;
+        		 var message = item.querySelector('.message').textContent;
+        		 var senderId;
+        		 var type = item.querySelector('.message').classList[1];
+        		 if(type == 'my-message'){
+        			 senderId = myId;
+        		 } else {
+        			 senderId = name;
+        		 }
+        		 
+        		 data = {
+        				 "time":time,
+        				 "message":message,
+        				 "senderId":senderId
+        		 }
+        		 value.push(data);
+        		 
+        	 })
+        	 
+        	 console.log("setChatHistory >>> ", value.toString());
+        	 sessionStorage.setItem(name, JSON.stringify(value));
+         };
+         
+         // insert pre chat history
+         function getChatHistory(name){
+        	 var data = JSON.parse(sessionStorage.getItem(name));
+        	 
+        	 if(data != null) {
+	        	 data.forEach(item => {
+	        		 console.log('getChatHIstory item >>>', item);
+	        		 var time = item.time;
+	        		 var message = item.message;
+	        		 var senderId = item.senderId;
+	        		 
+	        		 insertMessage(senderId, time, message);
+	        	 })
+        	 }
+         }
          
          // scroll down event
          function scrollDown() {
