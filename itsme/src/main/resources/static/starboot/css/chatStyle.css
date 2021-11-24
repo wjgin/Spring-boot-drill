@@ -3,6 +3,10 @@ body{
     margin-top:20px;
 }
 
+.d-flex {
+  display: flex !important;
+}
+
 .card {
     background: #fff;
     transition: .5s;
@@ -225,10 +229,10 @@ body{
 }
 .circle{
 	border-radius: 50%;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	background-color: red;
-	margin-right: 20px;
+	margin-right: 25px;
 	float: right;
 }
 .staging-count{
@@ -249,12 +253,13 @@ body{
 	height: 35px;
 }
 .input-group-prepend input{
-	width: 80%;
+	width: 85%;
 	height: 100%;
 }
 
 .input-group-prepend button{
-	height: 80%;
+	height: 90%;
+	margin-left: 10px;
 }
 
 @media only screen and (max-width: 767px) {

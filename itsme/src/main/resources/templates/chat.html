@@ -1,9 +1,16 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
-<link
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-	rel="stylesheet" />
-<link href="starboot/css/chatStyle.css" rel="stylesheet" />
+	<!-- 	style -->
+	<link href="starboot/css/chatStyle.css" rel="stylesheet" />
+	
+	<!-- 	bootstrap, jquery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- 	fontawsome -->
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+	
 </head>
 <body>
 
@@ -24,8 +31,7 @@
 
 							<!-- master status -->
 							<li class="clearfix" onclick="activeToggle(this)" id="master"><img
-								src="https://bootdey.com/img/Content/avatar/avatar1.png"
-								alt="avatar">
+								src="starboot/assets/img/user-astronaut-solid.svg" alt="master">
 							<div class="about">
 									<div id="master" class="name">master</div>
 									<div id="master-status" class="status">
@@ -36,15 +42,15 @@
 						</ul>
 					</div>
 
-					<!-- chatting section -->
+					<!-- chat section -->
 					<div class="chat">
 						<div class="chat-header clearfix">
 							<div class="row">
 								<div class="col-lg-6">
 									<a href="javascript:void(0);" data-toggle="modal"
-										data-target="#view_info"> <img
-										src="https://bootdey.com/img/Content/avatar/avatar2.png"
-										alt="avatar">
+										data-target="#view_info"> <img id="myImg"
+										src="starboot/assets/img/reddit-alien-brands.svg"
+										alt="me">
 									</a>
 									<div class="chat-about">
 										<span id="myId" class="m-b-0" th:text="${session.sessionId}"></span>
@@ -59,16 +65,18 @@
 							</ul>
 						</div>
 						<div class="chat-message clearfix">
-							<div class="input-group mb-0">
-								<div class="input-group-prepend">
-									<input id="msg" type="text"
-										onkeydown="if(event.keyCode==13){send()}" class="form-control"
-										placeholder="Enter text here...">
-									<button id="button-send" type="button" class="input-group-text">
-										<i class="fa fa-send"></i>
-									</button>
-									<button id="disconn" class="form-control float-right">disconnect</button>
-								</div>
+							<div class="input-group-prepend d-flex mb-0">
+								<input id="msg" type="text"
+									onkeydown="if(event.keyCode==13){send()}" class="form-control"
+									placeholder="Enter text here...">
+								<button id="button-send" type="button" class="input-group-text"
+									data-toggle="tooltip" data-placement="top" title="send a message">
+									<i class="fas fa-paper-plane"></i>
+								</button>
+								<button id="disconn" type="button" class="input-group-text"
+									data-toggle="tooltip" data-placement="top" title="Out from chat">
+									<i class="fas fa-sign-out-alt"></i>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -88,11 +96,13 @@
 		
 	   	 if(myId != 'master') {
 	   		 receiverId = 'master';
+	   	 } else {
+		   	 document.getElementById('myImg').src = "starboot/assets/img/user-astronaut-solid.svg";
 	   	 }
 	   	 
          document.querySelector("#disconn").addEventListener("click", (e) => {
-        	location.href = "/";
-            onClose(e);
+        	// location.href = "/";
+        	window.close();
          })
          
          document.querySelector("#button-send").addEventListener("click", (e) => {
@@ -306,24 +316,44 @@
 	            li.classList.add('clearfix');
 	            li.setAttribute('onclick', 'activeToggle(this)');
 	            li.setAttribute('id', user);
-	            var str ='<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">' + " ";
-	            str += '<div class="about">' + " ";
-	            str += '<div class="name">' + user + '</div>';
-	            str += '<div class="status">';
-	            str += '<i id="master-status-icon" class="fa fa-circle online"></i>';
-	            str += '<span id=master-status-content>online</span></div>';
-				
-	            li.innerHTML = str;
 	            
-	            idiv = document.createElement('div');
-	            idiv.classList.add('circle', 'd-flex', 'align-items-center', 'justify-content-center', 'd-none');
-	            span = document.createElement('span');
-	            span.classList.add('staging-count');
-	            idiv.appendChild(span);
-	            li.appendChild(idiv);
+	            var img = document.createElement('img');
+	            var src = "starboot/assets/img/reddit-alien-brands.svg";
+	            img.setAttribute('src', src);
+	            img.setAttribute('alt', 'guest');
+	            
+	            var aboutDiv = document.createElement('div');
+	            aboutDiv.classList.add('about');
+	            var name = document.createElement('div');
+	            name.classList.add('name');
+	            name.textContent = user;
+	            aboutDiv.appendChild(name);
+	            
+	            var statusDiv = document.createElement('div');
+	            statusDiv.classList.add('status');
+	            var icon = document.createElement('i');
+	            icon.setAttribute('id', 'master-status-icon');
+	            icon.classList.add('fa', 'fa-circle', 'online');
+	            var span = document.createElement('span');
+	            span.setAttribute('id', 'master-status-content');
+	            statusDiv.appendChild(icon);
+	            statusDiv.appendChild(span);
+	            
+	            aboutDiv.appendChild(statusDiv);
+	            
+	            li.appendChild(img);
+	            li.appendChild(aboutDiv);
+	         
+	            var alertDiv = document.createElement('div');
+	            alertDiv.classList.add('circle', 'd-flex', 'align-items-center', 'justify-content-center', 'd-none');
+	            aspan = document.createElement('span');
+	            aspan.classList.add('staging-count');
+	            alertDiv.appendChild(aspan);
+	            li.appendChild(alertDiv);
+	            
 	            onlineUser.appendChild(li);
         	 }
-         }
+         };
          
          // delete outOne from onlineList
          function deleteOnlieList(outOne) {
@@ -343,7 +373,7 @@
               chatContent.appendChild(div);
               
               scrollDown();
-         }
+         };
          
          // update master status
          function updateMasterStatus(){
@@ -358,9 +388,8 @@
  	            	 icon.classList.add('offline');
  	             }
  				masterStatusContent.innerHTML = masterStatus;
- 				console.log('<<< updated master status >>> now : ', masterStatus);
  			}
-         }
+         };
          
          // save chat history
          function setChatHistory(name){
@@ -386,7 +415,6 @@
         		 
         	 })
         	 
-        	 console.log("setChatHistory >>> ", value.toString());
         	 sessionStorage.setItem(name, JSON.stringify(value));
          };
          
@@ -396,7 +424,6 @@
         	 
         	 if(data != null) {
 	        	 data.forEach(item => {
-	        		 console.log('getChatHIstory item >>>', item);
 	        		 var time = item.time;
 	        		 var message = item.message;
 	        		 var senderId = item.senderId;
@@ -404,15 +431,21 @@
 	        		 insertMessage(senderId, time, message);
 	        	 })
         	 }
-         }
+         };
          
          // scroll down event
          function scrollDown() {
              var chatContent =  document.querySelector("#chat-content");
              chatContent.scrollTop = chatContent.scrollHeight;
-         }
-         
-         
+         };
 	</script>
+	
+	<!-- bootstrap function -->
+	<script type="text/javascript">
+		window.onload = function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		}
+	</script>
+	
 </body>
 </html>
