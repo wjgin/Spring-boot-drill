@@ -115,8 +115,4 @@ function contactUpdateNo() {
     
 }
 
-// tooltip event
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 

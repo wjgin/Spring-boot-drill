@@ -11,7 +11,6 @@ body{
     background: #fff;
     transition: .5s;
     border: 0;
-    margin-bottom: 30px;
     border-radius: .55rem;
     position: relative;
     width: 100%;
@@ -288,11 +287,11 @@ body{
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .chat-app .chat-list {
-        height: 650px;
+        height: 600px;
         overflow-x: auto
     }
     .chat-app .chat-history {
-        height: 600px;
+        height: 70%;
         overflow-x: auto
     }
 }

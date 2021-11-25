@@ -3,7 +3,6 @@
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="com.genuitec.eclipse.code.ui.codemix.category"/>
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
