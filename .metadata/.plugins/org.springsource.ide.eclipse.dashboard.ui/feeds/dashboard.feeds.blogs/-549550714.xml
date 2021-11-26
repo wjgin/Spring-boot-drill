@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-11-23T09:00:00Z</updated>
+  <updated>2021-11-25T09:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Reactive-System and Functional Programming legend Debasish Ghosh</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/25/a-bootiful-podcast-reactive-system-and-functional-programming-legend-debasish-ghosh" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-11-25:4622</id>
+    <updated>2021-11-25T09:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to functional programming- and reactive systems-legend &lt;a href="https://twitter.com/debasishg"&gt;Debasish Ghosh (@debasishg)&lt;/a&gt;. And Happy Thanksgiving, if you celebrate! &lt;/p&gt;
+&lt;iframe title="Reactive-System and Functional Programming legend Debasish Ghosh" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=dm7ax-113e665-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring (Happy Thanksgiving!) - November 23rd, 2021</title>
     <link rel="alternate" href="https://spring.io/blog/2021/11/23/this-week-in-spring-happy-thanksgiving-november-23rd-2021" />
@@ -563,34 +576,6 @@ We&amp;#8217;re currently working with Sonatype to investigate options to potent
     <updated>2021-11-10T20:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;Spring Tips&lt;/em&gt;! In this installment, I wanted to share with you the keynote that &lt;a href="https://twitter.com/_JamesWard"&gt;Google&amp;rsquo;s James Ward (@_JamesWard)&lt;/a&gt; and I put together for the recent Reactive Summit 2021 event, titled: &amp;ldquo;&lt;em&gt;Reactive, Here and There&lt;/em&gt;.&amp;rdquo; &lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/uAb2NtRrxSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - November 9th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/11/09/this-week-in-spring-november-9th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-11-09:4598</id>
-    <updated>2021-11-09T21:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How&amp;rsquo;re you doin&amp;rsquo;? I&amp;rsquo;m doing alright! It&amp;rsquo;s been raining cats and dogs here in San Francisco. California, the state where I live, dearly needs the rain, so it&amp;rsquo;s a positive, I suppose. But it still feels miserable. Between the daylights savings time shortening the daylight significantly and the rain, it&amp;rsquo;s a gloomy kind of day. At least there&amp;rsquo;s a lot of good stuff to read! Let&amp;rsquo;s dive right into it! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/04/bootiful-podcast-legend-dutchess-founder-devoxx4kids-contributor-and-fellow-java-champion-linda-van-der-pal"&gt;Bootiful Podcast: Legend, Dutchess founder, Devoxx4Kids contributor, and fellow Java Champion Linda van der Pal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://auth0.com/blog/full-stack-java-with-react-spring-boot-and-jhipster/"&gt;Full Stack Java with React, Spring Boot, and JHipster&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://medium.com/oracle-coherence/hello-coherence-bootiful-spring-be83554b3859"&gt;Hello, Coherence — Bootiful Spring &lt;/a&gt; by Oracle&amp;rsquo;s Gunnar Hillert, a legend.&lt;/li&gt;
-  &lt;li&gt;Check out the videos from the recent &lt;a href="https://www.youtube.com/c/reactivesummit"&gt;Reactive Summit&lt;/a&gt;. I was the emcee and the day two keynoter, along with my friend and Google&amp;rsquo;s James Ward.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://itnext.io/running-spring-boot-apps-start-tracing-with-opentelemetry-in-minutes-a5d3dffc1ce1"&gt;Running Spring Boot Apps? Start Tracing with OpenTelemetry in Minutes!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/03/spring-cloud-2021-0-0-rc1-codename-jubilee-has-been-released"&gt;Spring Cloud 2021.0.0-RC1 (codename Jubilee) Has Been Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/05/spring-cloud-data-flow-2-8-4-and-2-9-1-released"&gt;Spring Cloud Data Flow 2.8.4 and 2.9.1 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/04/spring-cloud-gateway-versions-2-2-10-release-and-3-0-5-are-now-available"&gt;Spring Cloud Gateway versions 2.2.10.RELEASE and 3.0.5 are now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/03/spring-tips-controllers-give-http-a-rest"&gt;Spring Tips: @Controllers: Give HTTP a REST&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://deinum.biz/2021-11-05-Component-Scanning/"&gt;The power of component scanning in Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/08/update-on-eol-for-spring-security-oauth"&gt;Update on EOL for Spring Security OAuth&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I&amp;rsquo;ll be speaking at the upcoming &lt;a href="https://twitter.com/yow_conf/status/1456410939327188994?s=12"&gt;YOW! Conferences&lt;/a&gt;. Join us!&lt;/li&gt;
-  &lt;li&gt;This is an interesting, optimized-for-certain-usecases alternative to &lt;code&gt;@MockBean&lt;/code&gt;: &lt;a href="https://github.com/antoinemeyer/mock-in-bean"&gt;antoinemeyer/mock-in-bean: Surgically Inject Mockito Mock/Spy in Spring Beans&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1456302723503173636"&gt;Michael Coté thinks 2022 will be year of figuring out kubernetes for developers, &amp;ldquo;DevX&amp;rdquo; or whatever. &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

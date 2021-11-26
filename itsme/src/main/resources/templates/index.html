@@ -38,8 +38,6 @@
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#activities">Activites</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="javascript:openDetail('/chat?id=guest')">live chat</a></li>
 				</ul>
 			</div>
 		</div>
@@ -232,6 +230,11 @@
                     </div>
                 </div>
             </div>
+			<!-- enter chat -->
+            <a href="javascript:openDetail('/chat?id=guest')" class="enter_chat"
+            data-toggle="tooltip" data-placement="top" title="Go Live Chat!"> 
+            	<i class="fas fa-comments"></i>
+            </a>
         </section>
         <!-- Footer-->
         <footer class="footer text-center">
@@ -469,6 +472,7 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
+       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <!-- Core JS-->

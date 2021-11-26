@@ -112,7 +112,9 @@ function contactUpdateNo() {
     document.querySelector('#email').disabled = false;
     document.querySelector('#phone').disabled = false;
     document.querySelector('#message').disabled = false;
-    
 }
 
+$(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});
 

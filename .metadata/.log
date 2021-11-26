@@ -2930,3 +2930,15 @@ Binding(COMMAND+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-25 16:02:50.703
 !MESSAGE executing callback sts4.classpath.RZKqZFEE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-26 18:08:55.989
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RZKqZFEE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-26 18:08:55.994
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RZKqZFEE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-26 18:08:55.995
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-26 18:08:55.997
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RZKqZFEE => OK

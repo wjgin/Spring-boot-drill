@@ -11507,3 +11507,22 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.enter_chat{
+	position: fixed !important;
+	right: 35px !important;
+	bottom: 35px !important;
+	z-index: 100 !important;
+	color: black;
+}
+
+.fa-comments {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.fa-comments:hover {
+	width: 150px !important;
+	height: 150px !important;
+	
+}

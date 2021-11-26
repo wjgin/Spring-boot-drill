@@ -293,8 +293,10 @@
         	 document.getElementById('chat-content').innerHTML = "";
         	 getChatHistory(receiverId);
         	 divideChatSection(receiverId);
-        	 document.getElementById(receiverId).querySelector('.circle > .staging-count').textContent = "";
-        	 document.getElementById(receiverId).querySelector('.circle').classList.add('d-none');
+        	 if(document.getElementById(receiverId).querySelector('.circle') != null) {
+	        	 document.getElementById(receiverId).querySelector('.circle > .staging-count').textContent = "";
+	        	 document.getElementById(receiverId).querySelector('.circle').classList.add('d-none');
+        	 }
          }
          
 	      // insert all users into online list
@@ -336,6 +338,7 @@
 	            icon.classList.add('fa', 'fa-circle', 'online');
 	            var span = document.createElement('span');
 	            span.setAttribute('id', 'master-status-content');
+	            span.textContent = 'online';
 	            statusDiv.appendChild(icon);
 	            statusDiv.appendChild(span);
 	            
@@ -366,9 +369,10 @@
         	  var div = document.createElement('div');
               div.classList.add('clearfix');
               var str = receiverId + '님과의 대화 시작 ';
-              str += "<hr>";
+              var hr = document.createElement('hr');
            
-              div.innerHTML = str;
+              div.textContent = str;
+              div.appendChild(hr);
               var chatContent =  document.querySelector("#chat-content");
               chatContent.appendChild(div);
               
