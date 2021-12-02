@@ -1,14 +1,36 @@
 package hello.hellospring;
 
+import hello.hellospring.repository.JdbcTemplateMemberRepository;
+import hello.hellospring.repository.JpaMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import hello.hellospring.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.persistence.EntityManager;
+import javax.sql.DataSource;
+
 // @Service, @Repository를 사용하지않고 직접 스프링에 Bean 등록
+// Java 소스로 직접 config를 할 때의 장점: DB가 선정되지 않았거나 차후에 변경되어야할때, Config에서 @Bean으로 설정된 객체의 이름만 변경해주면 된다.
 @Configuration
 public class SpringConfig {
+/*
+
+    private DataSource dataSource;
+
+    @Autowired
+    public SpringConfig(DataSource dataSource){
+        this.dataSource = dataSource;
+    }
+*/
+    private EntityManager em;
+
+    @Autowired
+    public void SpringConfig(EntityManager em){
+        this.em = em;
+    }
 
     @Bean
     public MemberService memberService(){
@@ -17,7 +39,9 @@ public class SpringConfig {
 
     @Bean
     public MemberRepository memberRepository(){
-        return new MemoryMemberRepository();
+        // return new MemoryMemberRepository();
+        // return new JdbcTemplateMemberRepository(dataSource);
+        return new JpaMemberRepository(em);
     }
 
 }

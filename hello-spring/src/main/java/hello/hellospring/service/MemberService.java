@@ -5,10 +5,12 @@ import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional  // jpa 사용시 데이터를 수정할 경우 항상 트렌섹션 필요
 public class MemberService {
     // command shift T 단축키로 test 껍데기 자동 생성 가능
 
@@ -40,7 +42,7 @@ public class MemberService {
     /**
      * 전체 회원 조회
      */
-    public List<Member> findMemebers(){
+    public List<Member> findMembers(){
         return repository.findAll();
     }
 

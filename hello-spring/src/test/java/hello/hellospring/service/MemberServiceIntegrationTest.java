@@ -3,36 +3,28 @@ package hello.hellospring.service;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
+import org.springframework.transaction.annotation.Transactional;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-// 단위 테스트
-// 통합 테스트의 경우 스프링부트를 올려기에 속도차원에서 불리함 단위 테스트의 중요함이 큼
-class MemberServiceTest {
+@SpringBootTest // 스프링 통합 테스트
+@Transactional  // 트랜젝션 롤백 기능(after, before each 불 필요) :spring-jdbc 라이브러리 제공
+class MemberServiceIntegrationTest {
 
-    MemberService memberService;
-    MemoryMemberRepository memberRepository;
-
-    // 각 테스트를 실행하기 전에 실행
-    @BeforeEach
-    public void beforeEach(){
-        // DI(Dependency Injection) => 같은 MemberRepository 객체를 사용하기 위함
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    }
-
-    @AfterEach
-    public void afterEach(){
-        memberRepository.clearStore();
-    }
+    // 테스트의 경우, 필드 주입도 사용
+    @Autowired MemberService memberService;
+    @Autowired MemberRepository memberRepository;   // 구현체가 아닌 인터페이스를 등록(스프링이 구현체를 찾아줌)
 
     // 테스트 코드는 한글도 가능
     @Test
+    // @Commit Transactional이 최상에 붙어도 commit 해줌
     void 회원가입() {
         // given
         Member member = new Member();
