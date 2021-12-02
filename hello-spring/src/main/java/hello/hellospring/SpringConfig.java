@@ -25,23 +25,34 @@ public class SpringConfig {
         this.dataSource = dataSource;
     }
 */
+    /*
     private EntityManager em;
 
     @Autowired
     public void SpringConfig(EntityManager em){
         this.em = em;
     }
+*/
+
+    private final MemberRepository memberRepository;
+
+    // spring data jpa를 사용시 springdl MemberRepository 객체를 자동으로 bean으로 만듦
+    // JpaRepository를 상속받은 interface가 존재 시 인터페이스에 대한 구현체를 스프링이 자체적으로 빈 생성
+    @Autowired
+    public SpringConfig(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Bean
     public MemberService memberService(){
-        return new MemberService(memberRepository());
+        return new MemberService(memberRepository);
     }
 
-    @Bean
-    public MemberRepository memberRepository(){
-        // return new MemoryMemberRepository();
-        // return new JdbcTemplateMemberRepository(dataSource);
-        return new JpaMemberRepository(em);
-    }
+//    @Bean
+//    public MemberRepository memberRepository(){
+//         return new MemoryMemberRepository();
+//         return new JdbcTemplateMemberRepository(dataSource);
+//          return new JpaMemberRepository(em);
+//      }
 
 }
