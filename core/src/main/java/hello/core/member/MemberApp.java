@@ -1,9 +1,14 @@
 package hello.core.member;
 
+import hello.core.AppConfig;
+
 public class MemberApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        MemberService memberService;
+
+        AppConfig appConfig = new AppConfig();
+        memberService = appConfig.memberService();
 
         Member memeber = new Member(1L, "memeberA", Grade.VIP);
         memberService.join(memeber);
