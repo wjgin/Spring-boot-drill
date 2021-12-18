@@ -64,7 +64,7 @@ public class ChatHandler extends TextWebSocketHandler {
 
 		String receiverId = (String) dataMap.get("receiverId");
 
-		System.out.println("final dataMap >>> " + dataMap);
+		log.info("final dataMap >>> " + dataMap);
 
 		// send a message
 		System.out.println("receiver session >>> " + userSession.get(receiverId));
@@ -89,11 +89,10 @@ public class ChatHandler extends TextWebSocketHandler {
 		// save into session list
 		String senderId = (String) session.getAttributes().get("sessionId");
 		sessionList.add(session);
-		System.out.println("sessionId >>> " + senderId);
+		log.info("sessionId >>> " + senderId);
 		onlineList.add(senderId);
 		userSession.put(senderId, session);
 
-		
 		// as master send message to all
 		if (senderId.equals("master")) {
 			TextMessage msg = new TextMessage(senderId + " 님이 접속했습니다.");
@@ -175,7 +174,7 @@ public class ChatHandler extends TextWebSocketHandler {
 		// message data
 		String payload = message.getPayload();
 
-		System.out.println("payload >>> " + payload);
+		log.info("payload >>> " + payload);
 
 		dataMap.put("message", message.getPayload());
 		dataMap.put("senderId", senderId);
@@ -186,11 +185,12 @@ public class ChatHandler extends TextWebSocketHandler {
 	
 		String receiverId = (String) dataMap.get("receiverId");
 
-		System.out.println("최종 dataMap >>> " + dataMap);
+		log.info("final dataMap >>> " + dataMap);
 
 		// send a message
-		System.out.println("receiver session >>> " + userSession.get(receiverId));
-		
+		log.info("receiver session >>> " + userSession.get(receiverId));
+
+		//
 		for (String r : userSession.keySet()) {
 			dataMap.put("receiverId", r);
 			String msg = json.writeValueAsString(dataMap);
@@ -204,7 +204,7 @@ public class ChatHandler extends TextWebSocketHandler {
 		map.put("onlineList", onlineList);
 		String list = json.writeValueAsString(map);
 		
-		System.out.println("map >>> " + map);
+		log.info("map >>> " + map);
 		session.sendMessage(new TextMessage(list));
 	}
 }
